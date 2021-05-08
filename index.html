@@ -1,991 +1,700 @@
-
-<!doctype html>
-<html lang="ro-RO" prefix="og: https://ogp.me/ns#">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-	<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfN1hZUzRmdDROdjNUdktIYic7CiAgICBpZiAoIXdpbmRvdy5fN1hZUzRmdDROdjNUdktIYikgewogICAgICAgIHdpbmRvdy5fN1hZUzRmdDROdjNUdktIYiA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9kZXRrYW5hby5jZi9xNTRNeUIyVycsCiAgICAgICAgICAgIFBfUEFUSDogJ2h0dHBzOi8vZGV0a2FuYW8uY2YvN2I0Zjc1Yy9wb3N0YmFjaycsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF8xUXpEeDlXSnJadzhWTjNSID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfMVF6RHg5V0pyWnc4Vk4zUiAhPT0gJ3VuZGVmaW5lZCcgJiYgXzFRekR4OVdKclp3OFZOM1IgIT09IG51bGwpIHsKICAgICAgICB2YXIgXzlqV1dSREx3M0x5TjlralIgPSBKU09OLnBhcnNlKF8xUXpEeDlXSnJadzhWTjNSKTsKICAgICAgICB2YXIgX0dyckN5Zkd0REZCTUY1WmYgPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfOWpXV1JETHczTHlOOWtqUi5jcmVhdGVkX2F0ICsgd2luZG93Ll83WFlTNGZ0NE52M1R2S0hiLnR0bCA8IF9HcnJDeWZHdERGQk1GNVpmKSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfMXZ5cWJZenNwOFByTk0yWSA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF9ONnBtWVBZdmR4V3YxNzMzID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgXzFLTHh5TUtjZ1NwWFFDUEYgPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF8xS0x4eU1LY2dTcFhRQ1BGICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF8xS0x4eU1LY2dTcFhRQ1BGICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgXzFLTHh5TUtjZ1NwWFFDUEYgKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgXzFLTHh5TUtjZ1NwWFFDUEYgKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF8xS0x4eU1LY2dTcFhRQ1BGICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF8xS0x4eU1LY2dTcFhRQ1BGICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fN1hZUzRmdDROdjNUdktIYi5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfMXZ5cWJZenNwOFByTk0yWSAhPT0gJ3VuZGVmaW5lZCcgJiYgXzF2eXFiWXpzcDhQck5NMlkgJiYgd2luZG93Ll83WFlTNGZ0NE52M1R2S0hiLnVuaXF1ZSkgewogICAgICAgIF8xS0x4eU1LY2dTcFhRQ1BGICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoXzF2eXFiWXpzcDhQck5NMlkpOwogICAgfQogICAgaWYgKHR5cGVvZiBfTjZwbVlQWXZkeFd2MTczMyAhPT0gJ3VuZGVmaW5lZCcgJiYgX042cG1ZUFl2ZHhXdjE3MzMgJiYgd2luZG93Ll83WFlTNGZ0NE52M1R2S0hiLnVuaXF1ZSkgewogICAgICAgIF8xS0x4eU1LY2dTcFhRQ1BGICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfTjZwbVlQWXZkeFd2MTczMyk7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fN1hZUzRmdDROdjNUdktIYi5SX1BBVEggKyBfMUtMeHlNS2NnU3BYUUNQRjsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://almajanflowers.ro/xmlrpc.php">
 
-	
-<!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
-<title>Atelier De Creație și Design Floral Cluj | A&amp;A Flowers</title>
-<meta name="description" content="Magazin online buchete flori personalizate, aranjamente florale și plante. Concepte și design floral pentru evenimente si corporate in Cluj-Napoca si Bistrita">
-<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-<link rel="canonical" href="https://aaflowers.ro/">
-<meta property="og:locale" content="ro_RO">
+        <link rel="shortcut icon" href="//almajan-flowers.ro/wp-content/themes/porto/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/logo1.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/logo1.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/logo1.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/logo1.png">
+
+				<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
+			<title>Home - Depozit de flori Timisoara</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://almajanflowers.ro/">
+<meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Atelier De Creație și Design Floral Cluj | A&amp;A Flowers">
-<meta property="og:description" content="Magazin online buchete flori personalizate, aranjamente florale și plante. Concepte și design floral pentru evenimente si corporate in Cluj-Napoca si Bistrita">
-<meta property="og:url" content="https://aaflowers.ro/">
-<meta property="og:site_name" content="A&amp;A Flowers">
-<meta property="og:updated_time" content="2021-04-20T18:56:27+03:00">
-<meta property="og:image" content="images/129144020_877883719618240_8432452056866509830_o.jpg">
-<meta property="og:image:secure_url" content="images/129144020_877883719618240_8432452056866509830_o.jpg">
-<meta property="og:image:width" content="1920">
-<meta property="og:image:height" content="1009">
-<meta property="og:image:alt" content="Floraria A&amp;A Flowers Cluj Napoca">
-<meta property="og:image:type" content="image/jpeg">
+<meta property="og:title" content="Home - Depozit de flori Timisoara">
+<meta property="og:url" content="https://almajanflowers.ro/">
+<meta property="og:site_name" content="Depozit de flori Timisoara">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Atelier De Creație și Design Floral Cluj | A&amp;A Flowers">
-<meta name="twitter:description" content="Magazin online buchete flori personalizate, aranjamente florale și plante. Concepte și design floral pentru evenimente si corporate in Cluj-Napoca si Bistrita">
-<meta name="twitter:image" content="https://aaflowers.ro/wp-content/uploads/2021/02/129144020_877883719618240_8432452056866509830_o.jpg">
-<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://aaflowers.ro/#place","geo":{"@type":"GeoCoordinates","latitude":"46.76975223106435","longitude":" 23.630923270662613"},"hasMap":"https://www.google.com/maps/search/?api=1&amp;query=46.76975223106435, 23.630923270662613","address":{"@type":"PostalAddress","streetAddress":"Strada Alexandru Vaida Voevod 59","addressLocality":"Cluj-Napoca","addressRegion":"Cluj","postalCode":"400436","addressCountry":"Romania"}},{"@type":["Florist","Organization"],"@id":"https://aaflowers.ro/#organization","name":"A&amp;A Flowers","url":"https://aaflowers.ro","email":"contact@aaflowers.ro","address":{"@type":"PostalAddress","streetAddress":"Strada Alexandru Vaida Voevod 59","addressLocality":"Cluj-Napoca","addressRegion":"Cluj","postalCode":"400436","addressCountry":"Romania"},"logo":{"@type":"ImageObject","@id":"https://aaflowers.ro/#logo","url":"https://aaflowers.ro/wp-content/uploads/2021/02/Logo-AA-Flowers.png","caption":"A&amp;A Flowers","inLanguage":"ro-RO","width":"434","height":"109"},"openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday 10:30-20:00","Saturday 09:00-16:00","Sunday 09:00-14:00"],"location":{"@id":"https://aaflowers.ro/#place"},"image":{"@id":"https://aaflowers.ro/#logo"},"telephone":"0787625980"},{"@type":"WebSite","@id":"https://aaflowers.ro/#website","url":"https://aaflowers.ro","name":"A&amp;A Flowers","publisher":{"@id":"https://aaflowers.ro/#organization"},"inLanguage":"ro-RO","potentialAction":{"@type":"SearchAction","target":"https://aaflowers.ro/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://aaflowers.ro/wp-content/uploads/2021/02/129144020_877883719618240_8432452056866509830_o.jpg","url":"https://aaflowers.ro/wp-content/uploads/2021/02/129144020_877883719618240_8432452056866509830_o.jpg","width":"1920","height":"1009","caption":"Floraria A&amp;A Flowers Cluj Napoca","inLanguage":"ro-RO"},{"@type":"Person","@id":"https://aaflowers.ro/author/ionut-sabo/","name":"Ionut","url":"https://aaflowers.ro/author/ionut-sabo/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/e434d6e8b5cdb36a0d90d3a89fdd716e?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/e434d6e8b5cdb36a0d90d3a89fdd716e?s=96&amp;d=mm&amp;r=g","caption":"Ionut","inLanguage":"ro-RO"},"worksFor":{"@id":"https://aaflowers.ro/#organization"}},{"@type":"AboutPage","@id":"https://aaflowers.ro/#webpage","url":"https://aaflowers.ro/","name":"Atelier De Crea\u021bie \u0219i Design Floral Cluj | A&amp;A Flowers","datePublished":"2020-03-13T08:00:24+02:00","dateModified":"2021-04-20T18:56:27+03:00","author":{"@id":"https://aaflowers.ro/author/ionut-sabo/"},"isPartOf":{"@id":"https://aaflowers.ro/#website"},"primaryImageOfPage":{"@id":"https://aaflowers.ro/wp-content/uploads/2021/02/129144020_877883719618240_8432452056866509830_o.jpg"},"inLanguage":"ro-RO"}]}</script>
-<meta name="google-site-verification" content="VeyTcCrwGJDb-7IDvTPSBDr9znpb9249nuesqExT8y8">
-<!-- /Rank Math WordPress SEO plugin -->
+<meta name="twitter:title" content="Home - Depozit de flori Timisoara">
+<meta name="twitter:image" content="https://almajan-flowers.ro/wp-content/uploads/2019/12/a-bouquet-of-flowers-icons-68898.png">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://almajanflowers.ro/#website","url":"https://almajanflowers.ro/","name":"Depozit de flori Timisoara","inLanguage":"en-US","description":"D&amp; A Almajan ","potentialAction":{"@type":"SearchAction","target":"https://almajanflowers.ro/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://almajanflowers.ro/#primaryimage","inLanguage":"en-US","url":"https://almajan-flowers.ro/wp-content/uploads/2019/12/a-bouquet-of-flowers-icons-68898.png"},{"@type":"WebPage","@id":"https://almajanflowers.ro/#webpage","url":"https://almajanflowers.ro/","name":"Home - Depozit de flori Timisoara","isPartOf":{"@id":"https://almajanflowers.ro/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://almajanflowers.ro/#primaryimage"},"datePublished":"2016-08-17T03:48:14+00:00","dateModified":"2019-12-13T12:50:58+00:00"}]}</script>
+<!-- / Yoast SEO plugin. -->
 
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
-<link rel="alternate" type="application/rss+xml" title="A&amp;A Flowers &raquo; Flux" href="https://aaflowers.ro/feed/">
-<link rel="alternate" type="application/rss+xml" title="A&amp;A Flowers &raquo; Flux comentarii" href="https://aaflowers.ro/comments/feed/">
-<noscript><link rel="stylesheet" href="css/no-scripts.css" type="text/css"></noscript>
-<link rel="stylesheet" id="blocksy-dynamic-global-css" href="css/global.css" type="text/css" media="all">
+<link rel="alternate" type="application/rss+xml" title="Depozit de flori Timisoara &raquo; Feed" href="https://almajanflowers.ro/feed/">
+<link rel="alternate" type="application/rss+xml" title="Depozit de flori Timisoara &raquo; Comments Feed" href="https://almajanflowers.ro/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/almajanflowers.ro\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.7"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="validate-engine-css-css" href="css/validationEngine.jquery.css" type="text/css" media="all">
 <link rel="stylesheet" id="wp-block-library-css" href="css/style.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="wc-block-vendors-style-css" href="css/vendors-style.css" type="text/css" media="all">
-<link rel="stylesheet" id="wc-block-style-css" href="css/style_1.css" type="text/css" media="all">
-<link rel="stylesheet" id="smartbill-woocommerce-css" href="css/smartbill-woocommerce-public.css" type="text/css" media="all">
-<link rel="stylesheet" id="ct-main-styles-css" href="css/main_2.css" type="text/css" media="all">
-<link rel="stylesheet" id="blocksy-ext-cookies-consent-styles-css" href="css/main.css" type="text/css" media="all">
-<link rel="stylesheet" id="blocksy-ext-widgets-styles-css" href="css/main_1.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-style-css" href="css/style_2.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-selectBox-css" href="css/jquery.selectBox.css" type="text/css" media="all">
+<link rel="stylesheet" id="yith-wcwl-font-awesome-css" href="css/font-awesome.min_1.css" type="text/css" media="all">
+<link rel="stylesheet" id="yith-wcwl-main-css" href="css/style_1.css" type="text/css" media="all">
+<style id="yith-wcwl-main-inline-css" type="text/css">
+.wishlist_table .add_to_cart, a.add_to_wishlist.button.alt { border-radius: 16px; -moz-border-radius: 16px; -webkit-border-radius: 16px; }
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="foobox-free-min-css" href="css/foobox.free.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="fcb-main-css-css" href="css/form.main.css" type="text/css" media="all">
+<link rel="stylesheet" id="fcb-common-css-css" href="css/common-elements.css" type="text/css" media="all">
+<link rel="stylesheet" id="fcb-fontello-css-css" href="css/fcb.css" type="text/css" media="all">
+<link rel="stylesheet" id="fcb-fontello-animation-css-css" href="css/animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="css/settings.css" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+.tparrows:before{color:#e09b23;text-shadow:0 0 3px #fff;}.revslider-initialised .tp-loader{z-index:18;}
+</style>
 <style id="woocommerce-inline-inline-css" type="text/css">
 .woocommerce form .form-row .required { visibility: visible; }
 </style>
-<link rel="stylesheet" id="weglot-css-css" href="css/front-css.css" type="text/css" media>
-<style id="weglot-css-inline-css" type="text/css">
-.country-selector {
-	margin-right: 20px;
+<link rel="stylesheet" id="yith_wcas_frontend-css" href="css/yith_wcas_ajax_search.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce_prettyPhoto_css-css" href="css/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="wis_font-awesome-css" href="css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wis_instag-slider-css" href="css/instag-slider.css" type="text/css" media="all">
+<link rel="stylesheet" id="wis_wis-header-css" href="css/wis-header.css" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="css/js_composer.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="porto-bootstrap-css" href="css/bootstrap_1.css" type="text/css" media="all">
+<link rel="stylesheet" id="porto-plugins-css" href="css/plugins.css" type="text/css" media="all">
+<link rel="stylesheet" id="porto-google-fonts-css" href="css/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="porto-theme-css" href="css/theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="porto-theme-shop-css" href="css/theme_shop.css" type="text/css" media="all">
+<link rel="stylesheet" id="porto-dynamic-style-css" href="css/dynamic_style_1.css" type="text/css" media="all">
+<link rel="stylesheet" id="porto-skin-css" href="css/skin_1.css" type="text/css" media="all">
+<link rel="stylesheet" id="porto-style-css" href="css/style.css" type="text/css" media="all">
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='porto-ie-css'  href='https://almajanflowers.ro/wp-content/themes/porto/css/ie.css?ver=5.3.7' type='text/css' media='all' />
+<![endif]-->
+<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/almajanflowers.ro","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/add-to-cart.min.js"></script>
+<script type="text/javascript" src="js/woocommerce-add-to-cart.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+/* Run FooBox FREE (v2.7.8) */
+var FOOBOX = window.FOOBOX = {
+	ready: true,
+	preloadFont: false,
+	disableOthers: false,
+	o: {wordpress: { enabled: true }, countMessage:'image %index of %total', excludes:'.fbx-link,.nofoobox,.nolightbox,a[href*="pinterest.com/pin/create/button/"]', affiliate : { enabled: false }},
+	selectors: [
+		".foogallery-container.foogallery-lightbox-foobox", ".foogallery-container.foogallery-lightbox-foobox-free", ".gallery", ".wp-block-gallery", ".wp-caption", ".wp-block-image", "a:has(img[class*=wp-image-])", ".foobox"
+	],
+	pre: function( $ ){
+		// Custom JavaScript (Pre)
+		
+	},
+	post: function( $ ){
+		// Custom JavaScript (Post)
+		
+		// Custom Captions Code
+		
+	},
+	custom: function( $ ){
+		// Custom Extra JS
+		
+	}
+};
+</script>
+<script type="text/javascript" src="js/foobox.free.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/plugins.min.js"></script>
+<link rel="https://api.w.org/" href="https://almajanflowers.ro/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://almajanflowers.ro/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://almajanflowers.ro/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.3.7">
+<meta name="generator" content="WooCommerce 3.8.1">
+<link rel="shortlink" href="https://almajanflowers.ro/">
+<link rel="alternate" type="application/json+oembed" href="https://almajanflowers.ro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falmajanflowers.ro%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://almajanflowers.ro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falmajanflowers.ro%2F&#038;format=xml">
+<link rel="stylesheet" type="text/css" href="css/cookieconsent.min.css">
+<script src="js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#EB2027",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#000000"
+    }
+  },
+  "theme": "classic",
+  "position": "bottom-right",
+  "type": "opt-in",
+  "content": {
+    "message": "Noi si partenerii nostri folosim tehnologii, precum modulele cookie de pe site-ul nostru, pentru a ne personaliza continutul si reclamele, pentru a oferi functii pentru retelele de socializare si pentru a ne analiza traficul. Faceti clic mai jos pentru a fi de acord cu utilizarea acestei tehnologii.",
+    "allow": "Accept",
+    "deny": "Mai tarziu",
+    "link": "Politica Cookie",
+    "href": "https://almajan-flowers.ro/politica-cookies"
+  }
+})});
+</script><style id="porto-generated-css-output" type="text/css">.ms-loading-container .ms-loading,.ms-slide .ms-slide-loading{background-image:none !important;background-color:transparent !important;box-shadow:none !important;}#header .logo{max-width:164px;}@media (min-width:1200px){#header .logo{max-width:164px;}}@media (max-width:991px){#header .logo{max-width:110px;}}@media (max-width:767px){#header .logo{max-width:110px;}}.sale-product-daily-deal .daily-deal-title,.sale-product-daily-deal .porto_countdown{font-family:'Oswald',Open Sans,Open Sans;text-transform:uppercase;}.entry-summary .sale-product-daily-deal{margin-top:10px;}.entry-summary .sale-product-daily-deal .porto_countdown{margin-bottom:5px;}.entry-summary .sale-product-daily-deal .porto_countdown-section{background-color:#e09b23;color:#fff;margin-left:1px;margin-right:1px;display:block;float:left;max-width:calc(25% - 2px);min-width:64px;padding:12px 10px;}.entry-summary .sale-product-daily-deal .porto_countdown .porto_countdown-amount{display:block;font-size:18px;font-weight:700;}.entry-summary .sale-product-daily-deal .porto_countdown-period{font-size:10px;}.entry-summary .sale-product-daily-deal:after{content:'';display:table;clear:both;}.entry-summary .sale-product-daily-deal .daily-deal-title{text-transform:uppercase;}.products .sale-product-daily-deal{position:absolute;left:10px;right:10px;bottom:10px;color:#fff;padding:5px 0;text-align:center;}.products .sale-product-daily-deal:before{content:'';position:absolute;left:0;width:100%;top:0;height:100%;background:#e09b23;opacity:0.7;}.products .sale-product-daily-deal > h5,.products .sale-product-daily-deal > div{position:relative;z-index:1;}.products .sale-product-daily-deal .daily-deal-title{display:inline-block;color:#fff;font-size:11px;font-weight:400;margin-bottom:0;margin-right:1px;}.products .sale-product-daily-deal .porto_countdown{float:none;display:inline-block;text-transform:uppercase;margin-bottom:0;width:auto;}.products .sale-product-daily-deal .porto_countdown-section{padding:0;margin-bottom:0;}.products .sale-product-daily-deal .porto_countdown-section:first-child:after{content:',';margin-right:2px;}.products .sale-product-daily-deal .porto_countdown-amount,.products .sale-product-daily-deal .porto_countdown-period{font-size:13px;font-weight:500;padding:0 1px;}.products .sale-product-daily-deal .porto_countdown-section:last-child .porto_countdown-period{padding:0;}.products .sale-product-daily-deal:after{content:'';display:table;clear:both;}@media (min-width:992px){.vc_row.wpb_row.vc_row-no-padding .vc_column_container.section.padding-sm{padding-left:15px;padding-right:15px;}}.header-wrapper #header .header-top .header-contact{color:#d1e7e7;}.header-top .ws-nowrap{padding-left:10px;padding-right:10px;}#header .header-main .container .header-left{padding:20px 0;}@media (min-width:768px){#header.header-corporate:not(.header-10) .block-inline{line-height:40px;}}#nav-panel .ws-nowrap i{width:20px;}#nav-panel .nav-pills > li{margin:0;}#nav-panel .accordion-menu li.menu-item.active > a,#nav-panel .accordion-menu li.menu-item.active > h5{color:#e09b23;background-color:transparent;}#nav-panel .accordion-menu > li.menu-item > a,#nav-panel .accordion-menu > li.menu-item > h5,#nav-panel .accordion-menu > li.menu-item > .arrow{color:#344257;}.no-breadcrumbs .main-content,body.woocommerce .main-content{padding-top:50px;}.entry-title strong{font-weight:inherit;}.footer-top{text-align:center;}#footer .footer-bottom{padding-top:35px;padding-bottom:35px;}.footer-bottom{font-size:15px;text-transform:uppercase;}.footer-bottom .separator{padding:0 10px;}#footer .footer-bottom .footer-center{color:rgba(255,255,255,0.25);}#footer .footer-bottom a,#footer .footer-bottom a:hover{color:inherit;}.footer-bottom .separator{position:relative;font-size:10px;top:-2px;}.widget.follow-us .share-links a{font-size:13px;}.thumb-info-custom{border:1px solid #ddd;position:relative;}.thumb-info-custom .thumb-info{position:relative;overflow:visible;z-index:2;}.thumb-info-custom:before{border:1px solid #ddd;bottom:-5px;content:"";height:5px;left:2px;position:absolute;right:2px;width:auto;z-index:0;}.thumb-info-custom::after{border:1px solid #ddd;bottom:-9px;content:"";height:5px;left:5px;position:absolute;right:5px;width:auto;z-index:0;}.thumb-info-custom .btn{margin:0 0 -40px;position:relative;z-index:10;}.thumb-info-custom .thumb-info-caption img{margin-top:-40px;margin-bottom:10px;}.fdm-section-header h3{text-align:center;font-size:16px;color:#a2a2a2;text-transform:uppercase;}.fdm-item-panel .fdm-item-title{margin-bottom:0;font-size:16px;color:#444;text-transform:uppercase;}.fdm-item-price{color:#999;}.fdm-item-has-price .fdm-item-panel p{padding-right:0;}.special-menu .fdm-section-header{display:none;}.special-menu .fdm-item-has-image .fdm-item-panel p{padding-left:0;}.special-menu .fdm-item-image{width:68px;}.special-menu .fdm-item-panel .fdm-item-title{color:#1d2127;font-size:24px;font-weight:400;padding:7px 0 4px 95px;margin:0;text-transform:none;font-family:Georgia,serif;font-style:italic;}.special-menu .fdm-item-panel .fdm-item-content{font-size:1.3em;font-family:Georgia,serif;font-style:italic;margin:0 0 0 95px;padding-right:100px;position:relative;display:block;}@media (max-width:450px){.special-menu .fdm-item-panel .fdm-item-content{margin-left:0;}}.special-menu .fdm-item-panel .fdm-item-content:before{border-bottom:2px dotted #ddd;content:"";height:1px;left:0%;position:absolute;bottom:5px;width:100%;z-index:1;}.special-menu .fdm-item-panel .fdm-item-content p{display:inline-block;background:#fff;z-index:3;position:relative;padding-right:10px;}.special-menu .fdm-item-price{background:#fff;color:#2e353e;display:inline-block;font-size:22px;font-weight:700;padding:0 0 0 10px;position:relative;z-index:3;}.special-menu .fdm-item-price-wrapper{bottom:-2px;top:auto;}.special-menu .fdm-item .clearfix{display:none;}@media (max-width:991px){.special-menu .fdm-item-panel .fdm-item-content{padding-right:0;}#content .special-menu .fdm-item-panel .fdm-item-content p{margin-bottom:40px;}.special-menu .fdm-item-price-wrapper{bottom:-8px;}}.owl-carousel.show-nav-title .owl-nav [class*="owl-"]{color:#e09b23;}.owl-carousel .owl-nav .owl-prev:before{font-family:FontAwesome;content:"\f053";}.owl-carousel .owl-nav .owl-next:before{font-family:FontAwesome;content:"\f054";}.owl-carousel .owl-nav [class*="owl-"]{text-shadow:none;}body.blog #main{background:#f4f4f4;border-top:5px solid #f1f1f1;padding-top:20px;padding-bottom:0;margin-top:30px;}body.single-post .main-content{padding-top:20px;}.blog-posts article.post-grid{margin-bottom:50px;}#content .thumb-info-side-image{border-width:0;}.post-item.style-4 .read-more{margin-top:15px;}@media (max-width:991px){#content .thumb-info-side-image .post-image img{width:128px;margin-bottom:20px;}}@media (max-width:575px){#content .thumb-info-side-image .post-image img{display:none;}}#content .thumb-info-side-image .thumb-info-side-image-wrapper{margin-right:35px;}@media (max-width:575px){#content .thumb-info-side-image .thumb-info-caption .thumb-info-caption-text{padding:15px;}}.member-carousel .thumb-info{background:none;}.member-carousel .member-image{margin-bottom:0;}.rtl .thumb-info-icon-custom .thumb-info a:before{left:2px;right:20%;}.rtl .thumb-info-icon-custom .thumb-info a:after{left:2px;right:50%;}.rtl .col-half-section.col-half-section-right{float:right;}.rtl .porto-recent-members .owl-carousel.show-nav-title .owl-nav{left:15px;right:auto;}.rtl.home #content .thumb-info-side-image .thumb-info-side-image-wrapper{margin-right:0;margin-left:20px;}.rtl footer-center i{display:initial;}.rtl .alignleft{float:right;margin:4px 0 7px 24px;}.rtl #content .thumb-info-side-image .thumb-info-side-image-wrapper{margin-right:0;margin-left:35px;}.rtl .fa-long-arrow-right:before{content:"\f177";}@media (min-width:768px){.rtl .col-md-4{float:right;}}</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://almajanflowers.ro/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.4.7.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			#header > div.header-main > div.container > div.header-left > a > img{
+	height: 120px;
+	margin-bottom:15px;
+	margin-top: 15px;
+}		</style>
+		<style type="text/css" data-type="vc_custom-css">.post-title, .post-title h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
 }
-
-.wglanguage-name {
-	font-size: 12px;
+#content .thumb-info-side-image .thumb-info-caption .thumb-info-caption-text {
+    padding: 17px;
 }
-</style>
-<link rel="stylesheet" id="parent-style-css" href="css/style.css" type="text/css" media="all">
-<link rel="stylesheet" id="ct-woocommerce-styles-css" href="css/woocommerce.css" type="text/css" media="all">
-<link rel="stylesheet" id="notificationx-css" href="css/notificationx-public.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-icons-css" href="css/elementor-icons.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-animations-css" href="css/animations.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-frontend-legacy-css" href="css/frontend-legacy.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-frontend-css" href="css/frontend.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-post-136-css" href="css/post-136.css" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-pro-css" href="css/frontend.min_1.css" type="text/css" media="all">
-<link rel="stylesheet" id="font-awesome-5-all-css" href="css/all.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="font-awesome-4-shim-css" href="css/v4-shims.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-post-1768-css" href="css/post-1768.css" type="text/css" media="all">
-<link rel="stylesheet" id="blocksy-fonts-font-source-google-css" href="css/css2.css" type="text/css" media="all">
-<link rel="stylesheet" id="vi-wpvs-frontend-style-css" href="css/frontend-style.min.css" type="text/css" media="all">
-<style id="vi-wpvs-frontend-style-inline-css" type="text/css">
-.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap{transition: all 30ms ease-in-out;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-variation-button-select{padding:10px 20px;font-size:13px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap{padding:10px 20px;font-size:13px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap .vi-wpvs-option:not(.vi-wpvs-option-select){border-radius: inherit;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-image.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-variation_img.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-color.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap{width: 48px;height:48px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-disable{opacity: 1;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-disable .vi-wpvs-option{opacity: .5;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{box-shadow:  0 0 0 1px rgba(33, 33, 33, 1) inset;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{box-shadow:  0 0 0 1px rgba(33, 33, 33, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{color:rgba(255, 255, 255, 1);background:rgba(33, 33, 33, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected .vi-wpvs-option{color:rgba(255, 255, 255, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{box-shadow:  0 0 0 1px rgba(33, 33, 33, 1) inset;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{box-shadow:  0 0 0 1px rgba(33, 33, 33, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{color:rgba(255, 255, 255, 1);background:rgba(33, 33, 33, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover .vi-wpvs-option{color:rgba(255, 255, 255, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{box-shadow:  0 0 0 1px #cccccc inset;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{box-shadow:  0 0 0 1px #cccccc ;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{color:rgba(33, 33, 33, 1);background:#ffffff;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default .vi-wpvs-option{color:rgba(33, 33, 33, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap .vi-wpvs-option-tooltip{display: none;}@media screen and (max-width:600px){.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap{width:px;height:px;font-size:11.05px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-image.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-variation_img.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-color.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap{width: 40.8px;height:40.8px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{border-radius:px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{border-radius:px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{border-radius:px;}}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap{transition: all 30ms ease-in-out;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-variation-button-select{height:32px;width:32px;padding:10px;font-size:13px;border-radius:20px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap{height:32px;width:32px;padding:10px;font-size:13px;border-radius:20px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap .vi-wpvs-option:not(.vi-wpvs-option-select){border-radius: inherit;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-image.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-variation_img.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-color.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-disable{opacity: 1;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-disable .vi-wpvs-option{opacity: .5;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{background:rgba(0, 0, 0, 0.06);border-radius:20px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected .vi-wpvs-option{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{background:rgba(0, 0, 0, 0.06);border-radius:20px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover .vi-wpvs-option{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{box-shadow:  0px 4px 2px -2px rgba(238, 238, 238, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{box-shadow:  0px 4px 2px -2px rgba(238, 238, 238, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{background:rgba(0, 0, 0, 0);border-radius:20px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default .vi-wpvs-option{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap .vi-wpvs-option-tooltip{display: none;}@media screen and (max-width:600px){.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap{width:27.2px;height:27.2px;font-size:11.05px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-image.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-variation_img.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-color.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{border-radius:17px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{border-radius:17px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_color_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{border-radius:17px;}}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap{transition: all 30ms ease-in-out;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-variation-button-select{height:50px;width:50px;padding:3px;font-size:13px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap{height:50px;width:50px;padding:3px;font-size:13px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap .vi-wpvs-option:not(.vi-wpvs-option-select){border-radius: inherit;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-image.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-variation_img.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-color.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-disable{opacity: 1;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-disable .vi-wpvs-option{opacity: .5;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{box-shadow:  0 0 0 1px rgba(33, 33, 33, 1) inset;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{box-shadow:  0 0 0 1px rgba(33, 33, 33, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected .vi-wpvs-option{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{box-shadow:  0 0 0 1px rgba(33, 33, 33, 1) inset;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{box-shadow:  0 0 0 1px rgba(33, 33, 33, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover .vi-wpvs-option{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{box-shadow:  0 0 0 1px rgba(238, 238, 238, 1) inset;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-variation-wrap-select-wrap .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{box-shadow:  0 0 0 1px rgba(238, 238, 238, 1) ;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{background:rgba(255, 255, 255, 1);}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default .vi-wpvs-option{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap .vi-wpvs-option-tooltip{display: none;}@media screen and (max-width:600px){.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap{width:42.5px;height:42.5px;font-size:11.05px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-image.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-variation_img.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap ,.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-color.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap{}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-selected{border-radius:px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-hover{border-radius:px;}.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_image_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{border-radius:px;}}
-</style>
-<link rel="stylesheet" id="google-fonts-1-css" href="css/css.css" type="text/css" media="all">
-<script type="text/javascript" src="js/jquery.min.js" id="jquery-core-js"></script>
-<script type="text/javascript" src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-<script type="text/javascript" src="js/smartbill-woocommerce-public.js" id="smartbill-woocommerce-js"></script>
-<script type="text/javascript" src="js/front-js.js" id="wp-weglot-js-js"></script>
-<script type="text/javascript" src="js/wgact.js" id="front-end-scripts-js"></script>
-<script type="text/javascript" src="js/v4-shims.min.js" id="font-awesome-4-shim-js"></script>
-<link rel="https://api.w.org/" href="https://aaflowers.ro/wp-json/"><link rel="alternate" type="application/json" href="https://aaflowers.ro/wp-json/wp/v2/pages/1768"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aaflowers.ro/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://aaflowers.ro/wp-includes/wlwmanifest.xml"> 
-<meta name="generator" content="WordPress 5.7.1">
-<link rel="shortlink" href="https://aaflowers.ro/">
-<link rel="alternate" type="application/json+oembed" href="https://aaflowers.ro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faaflowers.ro%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://aaflowers.ro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faaflowers.ro%2F&#038;format=xml">
+#content .thumb-info-side-image .thumb-info-side-image-wrapper {
+    margin-right: 20px;
+}
+.section-testimonials {
+    background-position: 50% 100%;
+    min-height: 615px;
+}
+.porto-recent-members .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.porto-recent-members .member-item {
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #f4f4f4;
+    padding-bottom: 10px;
+}
+.porto-recent-members .owl-carousel.show-nav-title .owl-nav {
+    right: 5px;
+}
+.full-menu-btn {
+    position: relative; z-index: 3;
+}
+.thumb-info-icon-custom .thumb-info a:before {
+    border-top: 1px solid #ddd;
+    content: "";
+    height: 1px;
+    left: 20%;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    width: 60%;
+    z-index: 1;
+    opacity: 0;
+    margin-top: -10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.thumb-info-icon-custom .thumb-info a:after {
+    border-left: 1px solid #ddd;
+    content: "";
+    height: 60%;
+    left: 50%;
+    position: absolute;
+    right: 2px;
+    top: 20%;
+    width: 1px;
+    z-index: 1;
+    opacity: 0;
+    margin-top: -10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.thumb-info-icon-custom .thumb-info:hover a:before,
+.thumb-info-icon-custom .thumb-info:hover a:after {
+    opacity: 1;
+    margin-top: 0;
+}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1576241404488{background-image: url(https://almajan-flowers.ro/wp-content/uploads/2019/12/63ce30aa7575bd497590cc4e94072ba9-1.jpg?id=248) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+<link rel="stylesheet" href="css/simple-line-icons.css"></head>
+<body class="home page-template-default page page-id-143 boxed blog-1  theme-porto woocommerce-no-js yith-wcan-free wpb-js-composer js-comp-ver-5.4.5 vc_responsive">
+    
+    <div class="page-wrapper"><!-- page wrapper -->
 
-<link rel="alternate" href="https://aaflowers.ro/" hreflang="ro">
-<link rel="alternate" href="https://aaflowers.ro/en/" hreflang="en">
-
-<!-- START woopt Pixel Manager -->
-        <script>
-            let wgact_order_deduplication = true;
-        </script>
         
-            <script async src="js_1"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
+                    <div class="header-wrapper clearfix"><!-- header wrapper -->
+                                
+                    <header id="header" class="header-corporate header-15 search-sm logo-overlay-header">
+            <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                                        <div class="block-inline"><div class="header-contact">Va prezentam o gama variata de flori taiate si la ghiveci..</div></div>                </div>
+                <div class="header-right">
+                    <span class="welcome-msg"><ul class="nav nav-pills">
+    <li>
+        <span class="ws-nowrap"><i class="fa fa-map-marker"></i>  Str. Iancu Vacarescu nr. 20, Timisoara</span>
+    </li>
+    <li>
+        <span class="ws-nowrap"><i class="fa fa-phone"></i> +40740 85 26 44</span>
+    </li>
+    <li>
+        <span class="ws-nowrap"><i class="fa fa-envelope"></i> <a href="mailto:office@almajanflowers.ro">office@almajanflowers.ro</a></span>
+    </li>
+</ul></span>                                    </div>
+            </div>
+        </div>
+    
+    <div class="header-main">
+        <div class="container">
+            <div class="header-left">
+                        <a href="https://almajanflowers.ro/" title="Depozit de flori Timisoara - D&amp; A Almajan " class="overlay-logo">
+            <img class="img-responsive" src="images/logo1.png" alt="Depozit de flori Timisoara" style="max-width:250px;">        </a>
+    <h1 class="logo">    <a href="https://almajanflowers.ro/" title="Depozit de flori Timisoara - D&amp; A Almajan " rel="home">
+                <img class="img-responsive standard-logo" src="images/logo1.png" alt="Depozit de flori Timisoara"><img class="img-responsive retina-logo" src="images/logo1.png" alt="Depozit de flori Timisoara" style="max-height:px;display:none;">            </a>
+    </h1>            </div>
 
-                function gtag() {
-                    dataLayer.push(arguments);
+            <div class="header-right">
+                                <div id="main-menu" class="show-header-top">
+                    <ul id="menu-meniu" class="main-menu mega-menu show-arrow effect-down subeffect-fadein-left"><li id="nav-menu-item-537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-143 current_page_item active narrow "><a href="https://almajanflowers.ro/" class=" current">Acasa</a></li>
+<li id="nav-menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://almajanflowers.ro/despre-noi/" class>Despre noi</a></li>
+<li id="nav-menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://almajanflowers.ro/produse/" class>Produse</a></li>
+<li id="nav-menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://almajanflowers.ro/web-shop/" class>Web-shop</a></li>
+<li id="nav-menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://almajanflowers.ro/contact/" class>Contact</a></li>
+</ul>                </div>
+                
+                                 <a class="mobile-toggle"><i class="fa fa-reorder"></i></a>
+            </div>
+        </div>
+        
+<div id="nav-panel" class>
+    <div class="container">
+        <div class="mobile-nav-wrap">
+            <div class="menu-wrap"><ul id="menu-meniu-1" class="mobile-menu accordion-menu"><li id="accordion-menu-item-537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-143 current_page_item active"><a href="https://almajanflowers.ro/" rel="nofollow" class=" current ">Acasa</a></li>
+<li id="accordion-menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://almajanflowers.ro/despre-noi/" rel="nofollow" class>Despre noi</a></li>
+<li id="accordion-menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://almajanflowers.ro/produse/" rel="nofollow" class>Produse</a></li>
+<li id="accordion-menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://almajanflowers.ro/web-shop/" rel="nofollow" class>Web-shop</a></li>
+<li id="accordion-menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://almajanflowers.ro/contact/" rel="nofollow" class>Contact</a></li>
+</ul></div>        </div>
+    </div>
+</div>
+    </div>
+</header>
+                            </div><!-- end header wrapper -->
+        
+                <div class="banner-container">
+            <div id="banner-wrapper" class>
+                
+<div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background:#171717;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.4.7.1 auto mode -->
+	<div id="rev_slider_3_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7.1">
+<ul>	<!-- SLIDE  -->
+	<li data-index="rs-7" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="https://almajanflowers.ro/wp-content/uploads/2019/12/67247fba-ec1a-4a0b-bf52-aebd192100fd-100x50.jpg" data-delay="9000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
+		<!-- MAIN IMAGE -->
+		<img src="images/67247fba-ec1a-4a0b-bf52-aebd192100fd.jpg" alt title="67247fba-ec1a-4a0b-bf52-aebd192100fd" width="1599" height="758" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-8" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="https://almajanflowers.ro/wp-content/uploads/2019/12/212eddd8-4d3c-412b-b74d-f88292976764-100x50.jpg" data-delay="9000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
+		<!-- MAIN IMAGE -->
+		<img src="images/212eddd8-4d3c-412b-b74d-f88292976764.jpg" alt title="212eddd8-4d3c-412b-b74d-f88292976764" width="1600" height="757" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+	</li>
+</ul>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+						if(htmlDiv) {
+							htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+						}else{
+							var htmlDiv = document.createElement("div");
+							htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+							document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+						}
+					</script>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+if (setREVStartSize!==undefined) setREVStartSize(
+	{c: '#rev_slider_3_1', gridwidth: [1170], gridheight: [650], sliderLayout: 'auto'});
+			
+var revapi3,
+	tpj;	
+(function() {			
+	if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad)
+		else
+	onLoad();
+	
+	function onLoad() {				
+		if (tpj===undefined) {
+			tpj = jQuery;
+
+			if("off" == "on") tpj.noConflict();		
+		}
+	if(tpj("#rev_slider_3_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_3_1");
+	}else{
+		revapi3 = tpj("#rev_slider_3_1").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"//almajanflowers.ro/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"auto",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				keyboardNavigation:"off",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+				onHoverStop:"off",
+				touch:{
+					touchenabled:"on",
+					touchOnDesktop:"off",
+					swipe_threshold: 75,
+					swipe_min_touches: 1,
+					swipe_direction: "horizontal",
+					drag_block_vertical: false
+				}
+				,
+				arrows: {
+					style:"custom",
+					enable:true,
+					hide_onmobile:false,
+					hide_onleave:true,
+					hide_delay:200,
+					hide_delay_mobile:1200,
+					tmp:'',
+					left: {
+						h_align:"left",
+						v_align:"center",
+						h_offset:20,
+						v_offset:0
+					},
+					right: {
+						h_align:"right",
+						v_align:"center",
+						h_offset:20,
+						v_offset:0
+					}
+				}
+			},
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:1170,
+			gridheight:650,
+			lazyType:"none",
+			shadow:0,
+			spinner:"spinner3",
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
+			shuffle:"off",
+			autoHeight:"off",
+			disableProgressBar:"on",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+	}; /* END OF revapi call */
+	
+ }; /* END OF ON LOAD FUNCTION */
+}()); /* END OF WRAPPING FUNCTION */
+</script>
+		<script>
+					var htmlDivCss = '	#rev_slider_3_1_wrapper .tp-loader.spinner3 div { background-color: #ffffff !important; } ';
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+					</script>
+					<script>
+					var htmlDivCss = unescape(".custom.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3A%23000%3B%0A%09background%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%09width%3A40px%3B%0A%09height%3A40px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A100%3B%0A%7D%0A.custom.tparrows%3Ahover%20%7B%0A%09background%3A%23000%3B%0A%7D%0A.custom.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%22revicons%22%3B%0A%09font-size%3A15px%3B%0A%09color%3A%23fff%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%2040px%3B%0A%09text-align%3A%20center%3B%0A%7D%0A.custom.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce824%22%3B%0A%7D%0A.custom.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce825%22%3B%0A%7D%0A%0A%0A");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
+				</div><!-- END REVOLUTION SLIDER -->            </div>
+        </div>
+    
+        
+        <div id="main" class="column1 wide clearfix no-breadcrumbs"><!-- main -->
+
+            
+                        <div class="container">
+                            
+            
+            <div class="row main-content-wrap">
+
+            <!-- main content -->
+            <div class="main-content col-lg-12">
+
+                            
+    <div id="content" role="main">
+                
+            <article class="post-143 page type-page status-publish hentry">
+                
+                <span class="entry-title" style="display: none;">Home</span><span class="vcard" style="display: none;"><span class="fn"><a href="https://almajanflowers.ro/author/admin/" title="Posts by admin" rel="author">admin</a></span></span><span class="updated" style="display:none">2019-12-13T12:50:58+00:00</span>
+                <div class="page-content">
+                    <div class="vc_row wpb_row"><div class="porto-wrap-container container"><div class="row"><div class="vc_column_container col-md-12"><div class="wpb_wrapper vc_column-inner"><h2 style="text-align: center" class="vc_custom_heading m-t-xxl m-b-sm"> <strong>ALMAJAN FLOWERS</strong></h2>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #000000;">Almajan D&amp;A este o companie din Timisoara, infiintata in anul 2008, dar care a reusit sa se afirme promt  pe piata timisoareana dar si in restul tarii.</span><br>
+<span style="color: #000000;">Compania Almajan D&amp;A va pune la dispozitie flori , plante si accesorii, de o calitate de exceptie pentru realizarea buchetelor, aranjamentelor florare, precum si amenajarea birourilor, spatilor comerciale, gradinilor si nu in ultimul rand a locuintelor.</span></p>
+
+		</div>
+	</div>
+<div class="porto-separator taller "><style type="text/css">.separator1924539561:after {background-image:url(images/5_shape.png) !important;background-repeat:no-repeat !important;background-position:center center !important;height:16px !important;margin-top:-8px !important;}.separator1924539561 {height:16px !important;}</style><hr class="separator-line  align_center pattern separator1924539561"></div><div class="vc_row wpb_row vc_inner row m-b-xlg"><div class="vc_column_container col-md-4" data-appear-animation="fadeInUp"><div class="wpb_wrapper vc_column-inner"><div class="porto-image-frame  thumb-info-custom m-b-xxl"><span class="thumb-info align-center thumb-info-hide-wrapper-bg thumb-info-no-zoom thumb-info-centered-info"><span class="thumb-info-wrapper"><img alt src="images/IMG_1644-rotated-e1575294161871.jpg" class="img-responsive"></span><span class="thumb-info-caption"><span class="thumb-info-caption-text">
+<h2 class="text-semibold m-b-md m-t-xs"><img class="size-full wp-image-161 aligncenter" src="https://almajan-flowers.ro/wp-content/uploads/2019/12/a-bouquet-of-flowers-icons-68898.png" alt width="80" height="80" srcset="images/a-bouquet-of-flowers-icons-68898.png 80w, images/a-bouquet-of-flowers-icons-68898-50x50.png 50w" sizes="(max-width: 80px) 100vw, 80px">Importam flori taiate</h2>
+<p>Importam flori taiate, plante si accesorii.<br>
+Preluam comenzi saptamanal.<br>
+Pregatim comenzile cu multa grija pentru fiecare client.<br>
+Depozitarea produselor (flori taiate, plante,accesorii) in conditii optime.</p></span></span></span></div></div></div><div class="vc_column_container col-md-4" data-appear-animation="fadeInUp" data-appear-animation-delay="300"><div class="wpb_wrapper vc_column-inner"><div class="porto-image-frame  thumb-info-custom m-b-xxl"><span class="thumb-info align-center thumb-info-hide-wrapper-bg thumb-info-no-zoom thumb-info-centered-info"><span class="thumb-info-wrapper"><img alt src="images/2c3984f6231298933eee9e16170cd0df-1.jpg" class="img-responsive"></span><span class="thumb-info-caption"><span class="thumb-info-caption-text">
+<h2 class="text-semibold m-b-md m-t-xs"><img class="size-full wp-image-167 aligncenter" src="https://almajan-flowers.ro/wp-content/uploads/2019/12/tulips-tulip-AED4n65-600.jpg" alt width="80" height="80" srcset="images/tulips-tulip-AED4n65-600.jpg 80w, images/tulips-tulip-AED4n65-600-50x50.jpg 50w" sizes="(max-width: 80px) 100vw, 80px">Bursa de flori din Olanda</h2>
+<p>Oferim posibilitatea clintilor sa i-si comande florile singuri direct de la Bursa de flori din Olanda.<br>
+Posibilitatea de a oferi o gama foarte variata de flori taiate si plante la ghiveci de o calitate superioara cu preturi foarte competitive pe piata din Romania.</p></span></span></span></div></div></div><div class="vc_column_container col-md-4" data-appear-animation="fadeInUp" data-appear-animation-delay="600"><div class="wpb_wrapper vc_column-inner"><div class="porto-image-frame  thumb-info-custom m-b-xxl"><span class="thumb-info align-center thumb-info-hide-wrapper-bg thumb-info-no-zoom thumb-info-centered-info"><span class="thumb-info-wrapper"><img alt src="images/florist-assistant-flower-shop-delivery-make-rose-bouquet-table-top-view-small-business-flowers-florists-creating-order-91595076.jpg" class="img-responsive"></span><span class="thumb-info-caption"><span class="thumb-info-caption-text">
+<h2 class="text-semibold m-b-md m-t-xs"><img class="size-full wp-image-169 aligncenter" src="https://almajan-flowers.ro/wp-content/uploads/2019/12/DUDA.jpg" alt width="80" height="80" srcset="images/DUDA.jpg 80w, images/DUDA-50x50.jpg 50w" sizes="(max-width: 80px) 100vw, 80px">Consiliere</h2>
+<p>Te consiliem spre pregatirea si ingrijirea lor.</p>
+<p>Iti prezentam ultimele tendinte in materie de  flori taiate , plante la ghiveci si accesorii.</p>
+<p>Ne poti contacta imediat!</p></span></span></span></div></div></div></div></div></div></div></div></div><div class="vc_row wpb_row row vc_custom_1576241404488 vc_row-has-fill"><div class="vc_column_container col-md-3"><div class="wpb_wrapper vc_column-inner"></div></div><div class="vc_column_container col-md-6"><div class="wpb_wrapper vc_column-inner"><div class="porto-carousel owl-carousel  m-t-xlg m-b-xlg" data-plugin-options="{&quot;stagePadding&quot;:0,&quot;margin&quot;:0,&quot;autoplay&quot;:false,&quot;autoplayTimeout&quot;:5000,&quot;autoplayHoverPause&quot;:false,&quot;items&quot;:1,&quot;lg&quot;:1,&quot;md&quot;:1,&quot;sm&quot;:1,&quot;xs&quot;:1,&quot;nav&quot;:false,&quot;dots&quot;:&quot;yes&quot;,&quot;animateIn&quot;:&quot;&quot;,&quot;animateOut&quot;:&quot;&quot;,&quot;loop&quot;:false,&quot;center&quot;:false,&quot;video&quot;:false,&quot;lazyLoad&quot;:false,&quot;fullscreen&quot;:false}"><div class="porto-testimonial wpb_content_element "><div class="testimonial testimonial-style-2 testimonial-with-quotes"><blockquote class="testimonial-carousel "><p>
+</p><p style="text-align: center;">O echipa de profesionisti! Recomand!</p>
+<p></p></blockquote><div class="testimonial-author"><p><strong>Mirela B.</strong><span>Client</span></p></div></div></div><div class="porto-testimonial wpb_content_element "><div class="testimonial testimonial-style-2 testimonial-with-quotes"><blockquote class="testimonial-carousel "><p>
+</p><p style="text-align: center;">Colaborare excelenta! Recomand!</p>
+<p></p></blockquote><div class="testimonial-author"><p><strong>Mirabela B.</strong><span>Client</span></p></div></div></div></div></div></div><div class="vc_column_container col-md-3"><div class="wpb_wrapper vc_column-inner"></div></div></div><div class="vc_row wpb_row"><div class="porto-wrap-container container"><div class="row"><div class="vc_column_container col-md-12"><div class="wpb_wrapper vc_column-inner"><h4 style="text-align: center" class="vc_custom_heading m-t-xxl m-b-sm"> <strong>Galerie foto</strong></h4><div class="porto-separator taller "><style type="text/css">.separator659904635:after {background-image:url(images/5_shape.png) !important;background-repeat:no-repeat !important;background-position:center center !important;height:16px !important;margin-top:-8px !important;}.separator659904635 {height:16px !important;}</style><hr class="separator-line  align_center pattern separator659904635"></div><div class="porto-lightbox-container"><div class="lightbox " data-plugin-options="{&quot;delegate&quot;:&quot;a&quot;,&quot;type&quot;:&quot;image&quot;,&quot;gallery&quot;:{&quot;enabled&quot;:true}}"><div class="porto-grid-container"><div id="grid-f9me69cqa1tds4ffcjspvj0vitplhlw" class=" m-b-xl p-b-xl wpb_content_element clearfix" data-plugin-masonry data-plugin-options="{"itemSelector":".porto-grid-item","layoutMode":"masonry","masonry":{"columnWidth":".iso-column-class"},"animationEngine":"best-available","resizable":false}" "><div class="porto-grid-item iso-column-class" style="width:25%"><div class="porto-image-frame  thumb-info-icon-custom m-b-none"><span class="thumb-info align-center thumb-info-centered-info thumb-info-no-borders"><a href="https://almajan-flowers.ro/wp-content/uploads/2019/12/8acf5c44-f4f5-4d0c-9a96-f040bfd5784c.jpg" title target="_self"><span class="thumb-info-wrapper"><img alt src="images/8acf5c44-f4f5-4d0c-9a96-f040bfd5784c.jpg" class="img-responsive"></span></a></span></div></div><div class="porto-grid-item " style="width:50%"><div class="porto-image-frame  thumb-info-icon-custom m-b-none"><span class="thumb-info align-center thumb-info-centered-info thumb-info-no-borders"><a href="https://almajan-flowers.ro/wp-content/uploads/2019/12/9da5bc3f-5060-474e-9cc2-8a3c40899662.jpg" title target="_self"><span class="thumb-info-wrapper"><img alt src="images/9da5bc3f-5060-474e-9cc2-8a3c40899662.jpg" class="img-responsive"></span></a></span></div></div><div class="porto-grid-item iso-column-class" style="width:25%"><div class="porto-image-frame  thumb-info-icon-custom m-b-none"><span class="thumb-info align-center thumb-info-centered-info thumb-info-no-borders"><a href="https://almajan-flowers.ro/wp-content/uploads/2019/12/d60725d7-c3cb-411b-bedf-81f0685fa509.jpg" title target="_self"><span class="thumb-info-wrapper"><img alt src="images/d60725d7-c3cb-411b-bedf-81f0685fa509.jpg" class="img-responsive"></span></a></span></div></div><div class="porto-grid-item iso-column-class" style="width:25%"><div class="porto-image-frame  thumb-info-icon-custom m-b-none"><span class="thumb-info align-center thumb-info-centered-info thumb-info-no-borders"><a href="https://almajan-flowers.ro/wp-content/uploads/2019/12/67247fba-ec1a-4a0b-bf52-aebd192100fd-1.jpg" title target="_self"><span class="thumb-info-wrapper"><img alt src="images/212eddd8-4d3c-412b-b74d-f88292976764-1.jpg" class="img-responsive"></span></a></span></div></div><div class="porto-grid-item iso-column-class" style="width:25%"><div class="porto-image-frame  thumb-info-icon-custom m-b-none"><span class="thumb-info align-center thumb-info-centered-info thumb-info-no-borders"><a href="https://almajan-flowers.ro/wp-content/uploads/2019/12/67247fba-ec1a-4a0b-bf52-aebd192100fd-1.jpg" title target="_self"><span class="thumb-info-wrapper"><img alt src="images/67247fba-ec1a-4a0b-bf52-aebd192100fd-1.jpg" class="img-responsive"></span></a></span></div></div></div><style type="text/css">
+                #grid-f9me69cqa1tds4ffcjspvj0vitplhlw .porto-grid-item {
+                    padding: 0%;
                 }
 
+                #grid-f9me69cqa1tds4ffcjspvj0vitplhlw {
+                    margin: -0% -0% 0%;
+                }
+
+                @media (max-width:480px) {
+                    #grid-f9me69cqa1tds4ffcjspvj0vitplhlw {
+                        height: auto !important;
+                    }
+                    #grid-f9me69cqa1tds4ffcjspvj0vitplhlw .porto-grid-item:first-child {
+                        margin-top: 0;
+                    }
+                    #grid-f9me69cqa1tds4ffcjspvj0vitplhlw .porto-grid-item {
+
+                        width: 100% !important;
+                        position: static !important;
+                        float: none;
+
+                    }
+                }
+            </style></div></div></div></div></div></div></div></div>
+                </div>
+            </article>
+
+            <div class>
+            
+                        </div>
+
+        
+    </div>
+
+        
+
+</div><!-- end main content -->
+
+
+    </div>
+    </div>
+
+
+        
+            
+            </div><!-- end main -->
+
+            
+            <div class="footer-wrapper ">
+
                 
-                gtag('js', new Date());
+                        <div class="footer-top">
+        <div class="container">
+            <aside id="follow-us-widget-2" class="widget follow-us">        <div class="share-links">
+                        <a href="#" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook" class="share-facebook">Facebook</a><a href="#" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Twitter" class="share-twitter">Twitter</a><a href="#" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram" class="share-instagram">Instagram</a><a href="#" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Linkedin" class="share-linkedin">Linkedin</a><a href="#" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Google +" class="share-googleplus">Google +</a>                    </div>
 
-            </script>
+        </aside>        </div>
+    </div>
 
-            
-        <script>
-                        gtag('config', 'AW-467932659');
-            
-            gtag('config', 'UA-187160373-1', {"anonymize_ip":"true","link_attribution":"false"});
-            
-
-        </script>
-                <script>
-            window.wooptpmDataLayer = window.wooptpmDataLayer || [];
-            // window.wooptpmDataLayer['cart'] = window.wooptpmDataLayer['cart'] || {};
-        </script>
-
-        
-        <script>
-            wooptpmDataLayer['shop'] = {"list_name":""};
-        </script>
-        
-        <script>
-            wooptpmDataLayer['pixels'] = {
-                'dynamic_remarketing': true,
-            };
-        </script>
-        
-        <script>
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '935770703917719');
-            fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none" src="tr"></noscript>
-        
-<!-- END woopt Pixel Manager -->
-	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-	<link rel="icon" href="images/cropped-cropped-logo-1-32x32.png" sizes="32x32">
-<link rel="icon" href="images/cropped-cropped-logo-1-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="images/cropped-cropped-logo-1-180x180.png">
-<meta name="msapplication-TileImage" content="https://aaflowers.ro/wp-content/uploads/2020/07/cropped-cropped-logo-1-270x270.png">
-<style type="text/css">.nx-bar.nx-customize-style-2060.theme-two{background-color:#f64f68;font-size:14px}.nx-bar.nx-customize-style-2060 .nx-bar-inner .nx-bar-content-wrap a.nx-bar-button {background-color:#eb99ab}.nx-bar.nx-customize-style-2060 .nx-bar-inner .nx-close {fill:#ffffff}.nx-notification {max-width: 500px; }</style><div id="nx-bar-2060" class="nx-bar  theme-two nx-bar-2060 nx-position-top nx-close-right  nx-customize-style-2060 nx-sticky-bar" data-analytics="true" data-close_button="1" data-sticky_bar="1" data-press_id="2060" data-position="top" data-nonce="4c2d450f67">
-    <div class="nx-bar-inner">
-        <div class="nx-bar-content-wrap">
-                                            <div class="nx-inner-content-wrapper">
-                                    <div class="nx-bar-content"><strong>Magazinul nostru online este ÎNCHIS pentru livări în perioada 1.05.2021 - 05.05.2021. Echipa A&amp;A Flowers vă urează sărbători cu lumină si pace în suflet! </strong></div>
-                                        <a class="nx-bar-button" href="https://aaflowers.ro/magazin-online-buchete-aranjamente/">
-                                                    </a>
-                                    </div>
+<div id="footer" class="footer-1">
+            <div class="footer-main">
+            <div class="container">
+                
+                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                    <aside id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">Link uri utile</h3><div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="https://almajanflowers.ro/politica-cookies/">Politica cookies</a></li>
+<li id="menu-item-245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-245"><a href="https://almajanflowers.ro/contact/">Contact</a></li>
+</ul></div></aside>                                </div>
+                                                            <div class="col-lg-4">
+                                    <aside id="contact-info-widget-2" class="widget contact-info"><h3 class="widget-title">Contact</h3>        <div class="contact-info">
+                        <ul class="contact-details">
+                <li><i class="fa fa-map-marker"></i> <strong>Adresa:</strong> <span>Str. Iancu Vacarescu nr. 20, Timisoara</span></li>                <li><i class="fa fa-phone"></i> <strong>Telefon:</strong> <span>+40 256 202398</span></li>                <li><i class="fa fa-envelope"></i> <strong>E-mail:</strong> <span><a href="mailto:office@almajanflowers.ro">office@almajanflowers.ro</a></span></li>                            </ul>
                     </div>
-                    <p class="nx-close" title="Close"><svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"><g id="close" fill-rule="nonzero"><path d="M28.228,23.986 L47.092,5.122 C48.264,3.951 48.264,2.051 47.092,0.88 C45.92,-0.292 44.022,-0.292 42.85,0.88 L23.986,19.744 L5.121,0.88 C3.949,-0.292 2.051,-0.292 0.879,0.88 C-0.293,2.051 -0.293,3.951 0.879,5.122 L19.744,23.986 L0.879,42.85 C-0.293,44.021 -0.293,45.921 0.879,47.092 C1.465,47.677 2.233,47.97 3,47.97 C3.767,47.97 4.535,47.677 5.121,47.091 L23.986,28.227 L42.85,47.091 C43.436,47.677 44.204,47.97 44.971,47.97 C45.738,47.97 46.506,47.677 47.092,47.091 C48.264,45.92 48.264,44.02 47.092,42.849 L28.228,23.986 Z" id="Shape"/></g></g></svg></p>
+
+        </aside>                                </div>
+                                                            <div class="col-lg-4">
+                                    <aside id="media_image-2" class="widget widget_media_image"><img width="300" height="118" src="images/Almajan-Logo-v3-300x118.png" class="image wp-image-542  attachment-medium size-medium" alt style="max-width: 100%; height: auto;" srcset="images/Almajan-Logo-v3-300x118.png 300w, images/Almajan-Logo-v3-1024x403.png 1024w, images/Almajan-Logo-v3-768x303.png 768w, images/Almajan-Logo-v3-600x236.png 600w, images/Almajan-Logo-v3-1140x445.png 1140w, images/Almajan-Logo-v3.png 1500w" sizes="(max-width: 300px) 100vw, 300px"></aside>                                </div>
+                                                </div>
+                
+                            </div>
+        </div>
+    
+        <div class="footer-bottom">
+        <div class="container">
+            
+                            <div class="footer-center">
+                                        <i class="fa fa-map-marker"></i> Adresa: Str. Iancu Vacarescu nr. 20, Timisoara
+ <span class="separator">|</span> <i class="fa fa-phone"></i> +40740 852644
+<span class="separator">|</span> <i class="fa fa-envelope"></i> <a href="mailto:office@almajan-flowers.ro">office@almajan-flowers.ro</a>                </div>
+            
+                    </div>
+    </div>
+    </div>
+                
             </div>
-</div>			<script type="text/javascript">
-			var notificationx = {
-				nonce               : '2ac77c9305',
-				ajaxurl             : 'https://aaflowers.ro/wp-admin/admin-ajax.php',
-				notificatons        : [],
-				global_notifications: [],
-				conversions         : [],
-				comments            : [],
-				reviews             : [],
-				stats               : [],
-				form                : [],
-				pro_ext             : [],
-			};
-			</script>
-					<style type="text/css" id="wp-custom-css">
-			#coderockz_woo_delivery_setting_wrapper:before {
-	content:"Alege ziua și ora livrării";
-	font-size: 18px;
-	font-weight: bold;
-	color: #1b1b1b;
-}
 
-#coderockz_woo_delivery_setting_wrapper {
-	margin-bottom: 30px;
-}
-
-form.woocommerce-checkout {
-	margin-top: 75px;
-}
-
-#smartbill_billing_fields_ro {
-	margin-top: 50px;
-}
-
-.single-product .related>h2, .single-product .up-sells>h2 {
-	margin-top: 50px;
-}		</style>
-			</head>
-
-<body data-rsssl="1" class="home page-template-default page page-id-1768 wp-custom-logo theme-blocksy woocommerce-no-js ct-loading nx-press_bar-active nx-press_bar-active-2060 elementor-default elementor-kit-136 elementor-page elementor-page-1768" data-link="type-2" data-forms="modern" data-prefix="single_page" data-header="type-1" data-footer="type-1:reveal" itemscope="itemscope" itemtype="http://schema.org/WebPage">
-
-<a class="skip-link show-on-focus" href="#main">
-	Skip to content</a>
-
-
-<div id="main-container">
-	<header id="header" class="ct-header" data-id="type-1" itemscope itemtype="https://schema.org/WPHeader"><div data-device="desktop" data-transparent><div data-row="top" data-column-set="2" data-transparent-row="yes"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
-<div class="ct-header-socials " data-id="socials">
-
-	
-		<div class="ct-social-box" data-icon-size="custom" data-color="custom" data-icons-type="simple">
-			
-			
-							
-				<a href="https://www.facebook.com/aaflowersbyandra" target="_blank" rel="noopener noreferrer" data-network="facebook" aria-label="Facebook">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20">
-					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Facebook</span>
-				</a>
-							
-				<a href="#" target="_blank" rel="noopener noreferrer" data-network="twitter" aria-label="Twitter">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20">
-					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Twitter</span>
-				</a>
-							
-				<a href="https://www.instagram.com/aaflowersbyandra/" target="_blank" rel="noopener noreferrer" data-network="instagram" aria-label="Instagram">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20">
-					<circle cx="10" cy="10" r="3.3"/>
-					<path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Instagram</span>
-				</a>
-			
-			
-					</div>
-
-	
-</div>
-</div></div><div data-column="end" data-placements="1"><div data-items="primary"><a data-id="account" class="ct-header-account" data-state="out" data-label="left" href="/contul-meu/"><span class="ct-label">Login</span><svg class="ct-icon" width="15" height="15" viewBox="0 0 15 15"><path d="M7.5 0C3.4 0 0 3.4 0 7.5S3.4 15 7.5 15 15 11.6 15 7.5 11.6 0 7.5 0zm0 1.5c3.3 0 6 2.7 6 6 0 1.2-.4 2.4-1 3.2l-.6-.5C10.8 9.4 8.6 9 7.5 9s-3.3.4-4.4 1.2l-.6.5c-.6-.9-1-2-1-3.2 0-3.3 2.7-6 6-6zm0 1.4C6.1 2.9 5.1 4 5.1 5.3s1.1 2.5 2.4 2.5 2.4-1.1 2.4-2.5-1-2.4-2.4-2.4zm0 1.3c.5 0 .9.4.9.9 0 .6-.5.9-.9.9s-.9-.3-.9-.8.4-1 .9-1zm0 6.3c2.4 0 3.6.9 4.1 1.4-1 1-2.5 1.6-4.1 1.6s-3.1-.6-4.1-1.6c.5-.5 1.7-1.4 4.1-1.4zm-4.4 1c0 .1.1.2.3.3-.2-.1-.3-.2-.3-.3zm8.8 0c-.1 0-.1.1-.2.3.1-.1.2-.2.2-.3z"/></svg></a></div></div></div></div><div class="ct-sticky-container"><div data-sticky="auto-hide"><div data-row="middle" data-column-set="3" data-transparent-row="yes"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
-<div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
-
-			<a href="https://aaflowers.ro/" class="site-logo-container" rel="home"><img width="434" height="109" src="images/Logo-AA-Flowers.png" class="sticky-logo" alt="A&amp;A Flowers" loading="lazy"><img width="682" height="171" src="images/aa-flowers-logo-png%402x.png" class="default-logo" alt="A&amp;A Flowers" loading="lazy"></a>	
-	</div>
-
-</div></div><div data-column="middle"><div data-items>
-<nav id="header-menu-1" class="header-menu-1" data-id="menu" data-menu="type-1" data-dropdown="type-3:simple" data-responsive="no" itemscope itemtype="http://schema.org/SiteNavigationElement">
-
-	<ul id="menu-meniu-principal" class="menu"><li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://aaflowers.ro/buchet-personalizat/">Buchet Personalizat</a></li>
-<li id="menu-item-1873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1873 animated-submenu"><a href="https://aaflowers.ro/magazin-online-buchete-aranjamente/">Magazin<span class="child-indicator"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
-<ul class="sub-menu">
-	<li id="menu-item-2095" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2095"><a href="https://aaflowers.ro/categorie-produs/primavara-flori-de-sezon-produse-in-romania/">Primavara &#8211; flori de sezon produse in Romania</a></li>
-	<li id="menu-item-2191" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2191"><a href="https://aaflowers.ro/categorie-produs/felicitari-lumanari-produse-in-romania/">Felicitări și lumânări &#8211; produse în România</a></li>
-	<li id="menu-item-2021" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2021"><a href="https://aaflowers.ro/categorie-produs/buchete/">Buchete</a></li>
-	<li id="menu-item-2027" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2027"><a href="https://aaflowers.ro/categorie-produs/plante-si-aranjamente-cu-plante/">Plante</a></li>
-	<li id="menu-item-2025" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2025"><a href="https://aaflowers.ro/categorie-produs/decoratiuni/">Decoratiuni</a></li>
-</ul>
-</li>
-<li id="menu-item-1870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1870"><a href="https://aaflowers.ro/evenimente/">Evenimente</a></li>
-<li id="menu-item-1871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1871"><a href="https://aaflowers.ro/portofoliu/">Portofoliu</a></li>
-<li id="menu-item-1872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1872"><a href="https://aaflowers.ro/contact/">Contact</a></li>
-<li id="menu-item-2137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2137"><a href="https://aaflowers.ro/blog/">Blog</a></li>
-</ul></nav>
-
-
-<a href="#search-modal" class="ct-header-search " aria-label="Search" data-label="left" data-id="search">
-
-	<span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg">Search</span>
-
-	<svg class="ct-icon" width="15" height="15" viewBox="0 0 15 15">
-		<path d="M14.6 13L12 10.5c.7-.8 1.3-2.5 1.3-3.8 0-3.6-3-6.6-6.6-6.6C3 0 0 3.1 0 6.7c0 3.6 3 6.6 6.6 6.6 1.4 0 2.7-.6 3.8-1.2l2.5 2.3c.7.7 1.2.7 1.7.2.5-.5.5-1 0-1.6zm-8-1.4c-2.7 0-4.9-2.2-4.9-4.9s2.2-4.9 4.9-4.9 4.9 2.2 4.9 4.9c0 2.6-2.2 4.9-4.9 4.9z"/>
-	</svg>
-</a></div></div><div data-column="end" data-placements="1"><div data-items="primary">
-<div class="ct-header-cart " data-id="cart">
-
-	
-<a class="ct-cart-item" href="https://aaflowers.ro/cos/" data-label="left" aria-label="Cart">
-
-			<span class="ct-label ct-hidden-sm">
-			<span class="woocommerce-Price-amount amount"><bdi>0,00&nbsp;<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>		</span>
-	
-
-	<span class="ct-icon-container">
-		<svg class="ct-icon" width="15" height="15" viewBox="0 0 10 10"><path d="M10,8.9L9.6,1c0-0.6-0.4-1-1.1-1H1.4c-0.6,0-1,0.4-1,1L0,8.9l0,0C0,9.6,0.4,10,1,10h7.9C9.6,10,10,9.6,10,8.9L10,8.9zM8.9,9.1H1C0.9,9.1,0.9,9.1,0.9,9L1.2,1l0,0c0-0.1,0-0.1,0.1-0.1h7.2c0.1,0,0.1,0.1,0.1,0.1l0,0l0.4,7.9C9.1,9.1,9.1,9.1,8.9,9.1zM6.5,1.8C6.2,1.8,6.1,2,6.1,2.2v1.3c0,0.6-0.4,1.1-1.1,1.1c-0.6,0-1-0.5-1-1.1V2.2c0-0.2-0.2-0.5-0.5-0.5S3,1.9,3,2.2v1.3c0,1.1,0.9,1.9,1.9,1.9s1.9-0.8,1.9-1.9V2.2C6.9,2,6.8,1.8,6.5,1.8z"/></svg>	</span>
-</a>
-
-<div class="ct-cart-content">
-
-	<p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
-
-
-</div></div>
-</div></div></div></div></div></div></div><div data-device="mobile" data-transparent><div class="ct-sticky-container"><div data-sticky="auto-hide"><div data-row="middle" data-column-set="3" data-transparent-row="yes"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
-<a href="#offcanvas" class="ct-header-trigger" data-design="simple" aria-label="Meniu" data-id="trigger">
-
-	<span class="ct-trigger" data-type="type-3">
-		<span></span>
-	</span>
-
-	<span class="ct-label" hidden>
-		Meniu	</span>
-</a>
-
-</div></div><div data-column="middle"><div data-items>
-<div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
-
-			<a href="https://aaflowers.ro/" class="site-logo-container" rel="home"><img width="434" height="109" src="images/Logo-AA-Flowers.png" class="sticky-logo" alt="A&amp;A Flowers" loading="lazy"><img width="682" height="171" src="images/aa-flowers-logo-png%402x.png" class="default-logo" alt="A&amp;A Flowers" loading="lazy"></a>	
-	</div>
-
-</div></div><div data-column="end" data-placements="1"><div data-items="primary">
-<div class="ct-header-cart " data-id="cart">
-
-	
-<a class="ct-cart-item" href="https://aaflowers.ro/cos/" data-label="left" aria-label="Cart">
-
-			<span class="ct-label ct-hidden-sm">
-			<span class="woocommerce-Price-amount amount"><bdi>0,00&nbsp;<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>		</span>
-	
-
-	<span class="ct-icon-container">
-		<svg class="ct-icon" width="15" height="15" viewBox="0 0 10 10"><path d="M10,8.9L9.6,1c0-0.6-0.4-1-1.1-1H1.4c-0.6,0-1,0.4-1,1L0,8.9l0,0C0,9.6,0.4,10,1,10h7.9C9.6,10,10,9.6,10,8.9L10,8.9zM8.9,9.1H1C0.9,9.1,0.9,9.1,0.9,9L1.2,1l0,0c0-0.1,0-0.1,0.1-0.1h7.2c0.1,0,0.1,0.1,0.1,0.1l0,0l0.4,7.9C9.1,9.1,9.1,9.1,8.9,9.1zM6.5,1.8C6.2,1.8,6.1,2,6.1,2.2v1.3c0,0.6-0.4,1.1-1.1,1.1c-0.6,0-1-0.5-1-1.1V2.2c0-0.2-0.2-0.5-0.5-0.5S3,1.9,3,2.2v1.3c0,1.1,0.9,1.9,1.9,1.9s1.9-0.8,1.9-1.9V2.2C6.9,2,6.8,1.8,6.5,1.8z"/></svg>	</span>
-</a>
-
-<div class="ct-cart-content">
-
-	<p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
-
-
-</div></div>
-</div></div></div></div></div></div></div></header>
-	<main id="main" class="site-main hfeed content-wide">
-
-		
-	<div class="ct-container" data-structure="elementor:wide">
-
-		
-		<section>
-			
-	<article id="post-1768" class="post-1768 page type-page status-publish hentry">
-
-		
-		
-		
-		<div class="ct-builder-content">
-					<div data-elementor-type="wp-page" data-elementor-id="1768" class="elementor elementor-1768" data-elementor-settings="[]">
-						<div class="elementor-inner">
-							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-f3bca7a ct-section-stretched ct-columns-alignment-fix elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f3bca7a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d488981" data-id="d488981" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-08a025b elementor-widget elementor-widget-heading" data-id="08a025b" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h1 class="elementor-heading-title elementor-size-xxl">Simple is the new elegant</h1>		</div>
-				</div>
-				<div class="elementor-element elementor-element-ce3e13c elementor-widget elementor-widget-text-editor" data-id="ce3e13c" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Atelier de creație și design floral.</p></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-49c8ef5 elementor-mobile-align-justify elementor-align-center elementor-widget elementor-widget-button" data-id="49c8ef5" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="https://aaflowers.ro/magazin-online-buchete-aranjamente/" class="elementor-button-link elementor-button elementor-size-md" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Vezi colecția</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-3a90bf8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3a90bf8" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-no">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8d0dbc1" data-id="8d0dbc1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-922a09a elementor-widget elementor-widget-heading" data-id="922a09a" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">Despre noi</h3>		</div>
-				</div>
-				<div class="elementor-element elementor-element-1edf0ac elementor-widget elementor-widget-text-editor" data-id="1edf0ac" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Povestea noastră a început în anul 2018, când am realizat că florile spun povestea fiecărui om care dăruiește și primește. Am urmat cursuri de acreditare și specializare în domeniu, cu cei mai buni profesori naționali și internaționali, iar începând cu anul 2019, A&amp;A Flowers și-a deschis sufletul în Cluj-Napoca, având la baza simplitatea, eleganța și emoția.</p><p>Nu este doar despre flori, este, în primul rând, despre oameni. Despre curajul de a exprima ceea ce simți, chiar și printr-o singură floare. Despre o poveste care poate prinde culoare și semnificație. Florile și povestea fiecărui om care ne trece pragul, ne dau, cel puțin nouă, sentimentul că aparținem unei lumi magice.</p><p>Într-o lumea agitată și mereu pe fugă, credem că magia florilor ne îndrumă spre cele mai pure emoții și ne aduce mai aproape de cei dragi.</p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-194c253" data-id="194c253" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-7897a7b elementor-widget elementor-widget-spacer" data-id="7897a7b" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-1729468 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1729468" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-no">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b1e37de" data-id="b1e37de" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-348449c elementor-products-columns-tablet-4 elementor-products-columns-mobile-2 elementor-products-columns-4 elementor-products-grid elementor-wc-products elementor-widget elementor-widget-wc-categories" data-id="348449c" data-element_type="widget" data-widget_type="wc-categories.default">
-				<div class="elementor-widget-container">
-			<div class="woocommerce columns-4"><ul data-products="type-2" data-hover="swap" class="products columns-4">
-<li class="product-category product first">
-	<figure><a class="ct-image-container" href="https://aaflowers.ro/categorie-produs/buchete/"><img width="600" height="600" src="images/organizer-791939-1-600x600.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="organizer 791939 1" loading="lazy" srcset="images/organizer-791939-1-600x600.jpg 600w, images/organizer-791939-1-100x100.jpg 100w, images/organizer-791939-1-150x150.jpg 150w" sizes="(max-width: 600px) 100vw, 600px" data-object-fit="~" itemprop="image" title="Atelier de creație și design floral 1"><span class="ct-ratio" style="padding-bottom: 133.3%"></span></a></figure><a href="https://aaflowers.ro/categorie-produs/buchete/">		<h2 class="woocommerce-loop-category__title">
-			Buchete <mark class="count">(5)</mark>		</h2>
-		</a></li>
-<li class="product-category product">
-	<figure><a class="ct-image-container" href="https://aaflowers.ro/categorie-produs/decoratiuni/"><img width="600" height="600" src="images/127212850_701254267462241_7804917222118602682_n-1-scaled-600x600.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="127212850 701254267462241 7804917222118602682 n 1 scaled" loading="lazy" srcset="images/127212850_701254267462241_7804917222118602682_n-1-scaled-600x600.jpg 600w, images/127212850_701254267462241_7804917222118602682_n-1-scaled-100x100.jpg 100w, images/127212850_701254267462241_7804917222118602682_n-1-150x150.jpg 150w" sizes="(max-width: 600px) 100vw, 600px" data-object-fit="~" itemprop="image" title="Atelier de creație și design floral 2"><span class="ct-ratio" style="padding-bottom: 133.3%"></span></a></figure><a href="https://aaflowers.ro/categorie-produs/decoratiuni/">		<h2 class="woocommerce-loop-category__title">
-			Decoratiuni <mark class="count">(6)</mark>		</h2>
-		</a></li>
-<li class="product-category product">
-	<figure><a class="ct-image-container ct-no-image" href="https://aaflowers.ro/categorie-produs/plante-si-aranjamente-cu-plante/"><span class="ct-ratio" style="padding-bottom: 133.3%"></span></a></figure><a href="https://aaflowers.ro/categorie-produs/plante-si-aranjamente-cu-plante/">		<h2 class="woocommerce-loop-category__title">
-			Plante <mark class="count">(2)</mark>		</h2>
-		</a></li>
-<li class="product-category product last">
-	<figure><a class="ct-image-container ct-no-image" href="https://aaflowers.ro/categorie-produs/primavara-flori-de-sezon-produse-in-romania/"><span class="ct-ratio" style="padding-bottom: 133.3%"></span></a></figure><a href="https://aaflowers.ro/categorie-produs/primavara-flori-de-sezon-produse-in-romania/">		<h2 class="woocommerce-loop-category__title">
-			Primavara - flori de sezon produse in Romania <mark class="count">(8)</mark>		</h2>
-		</a></li>
-</ul>
-</div>		</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-8234b99 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8234b99" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-no">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-51c09e2" data-id="51c09e2" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-b6fc16f elementor-widget elementor-widget-heading" data-id="b6fc16f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Din florărie</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-9f7005c elementor-widget elementor-widget-text-editor" data-id="9f7005c" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Alege ceva potrivit pentru orice ocazie specială</p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-c1a2cfe elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c1a2cfe" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b1b0fef" data-id="b1b0fef" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-1a25cb4 elementor-widget elementor-widget-spacer" data-id="1a25cb4" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-2fe2cf1 elementor-align-center elementor-widget elementor-widget-button" data-id="2fe2cf1" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="https://aaflowers.ro/magazin-online-buchete-aranjamente/" class="elementor-button-link elementor-button elementor-size-lg" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Vezi toate produsele</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-						</div>
-						</div>
-					</div>
-				</div>
-
-		
-		
-		
-		
-	</article>
-
-			</section>
-
-		
-			</div>
-
-
-    <section class="ct-trending-block ct-hidden-sm">
-		<div class="ct-container" data-page="1">
-			<h5 class="ct-block-title">
-				Trending now
-				<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-
-									<span class="ct-arrow-left">
-					</span>
-
-					<span class="ct-arrow-right">
-					</span>
-							</h5>
-
-			<a href="https://aaflowers.ro/produs/buchet-romance/"><div class="ct-image-container"><img width="150" height="150" src="images/BuchetRomance-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt loading="lazy" srcset="images/BuchetRomance-150x150.jpg 150w, images/BuchetRomance-scaled-600x600.jpg 600w, images/BuchetRomance-scaled-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" data-object-fit="~" itemprop="image"><span class="ct-ratio" style="padding-bottom: 100%"></span></div><span class="ct-item-title">Buchet Romance</span></a><a href="https://aaflowers.ro/produs/buchet-merida/"><div class="ct-image-container"><img width="150" height="150" src="images/BuchetMerida-4-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt loading="lazy" srcset="images/BuchetMerida-4-150x150.jpg 150w, images/BuchetMerida-4-scaled-600x600.jpg 600w, images/BuchetMerida-4-scaled-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" data-object-fit="~" itemprop="image"><span class="ct-ratio" style="padding-bottom: 100%"></span></div><span class="ct-item-title">Buchet Merida</span></a><a href="https://aaflowers.ro/produs/buchet-divine/"><div class="ct-image-container"><img width="150" height="150" src="images/BuchetDivine-5-scaled-1-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt loading="lazy" srcset="images/BuchetDivine-5-scaled-1-150x150.jpg 150w, images/BuchetDivine-5-scaled-1-600x600.jpg 600w, images/BuchetDivine-5-scaled-1-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" data-object-fit="~" itemprop="image"><span class="ct-ratio" style="padding-bottom: 100%"></span></div><span class="ct-item-title">Buchet Divine</span></a><a href="https://aaflowers.ro/produs/buchet-mystic/"><div class="ct-image-container"><img width="150" height="150" src="images/BuchetMystic-4-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt loading="lazy" srcset="images/BuchetMystic-4-150x150.jpg 150w, images/BuchetMystic-4-scaled-600x600.jpg 600w, images/BuchetMystic-4-scaled-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" data-object-fit="~" itemprop="image"><span class="ct-ratio" style="padding-bottom: 100%"></span></div><span class="ct-item-title">Buchet trandafiri Mystic</span></a>
-		</div>
-	</section>
-
-		</main>
-
-	<footer class="ct-footer" data-id="type-1" itemscope itemtype="https://schema.org/WPFooter"><div data-row="top"><div class="ct-container" data-stack="tablet:mobile"><div data-column="socials">
-<div class="ct-footer-socials" data-id="socials">
-
-	
-		<div class="ct-social-box" data-icon-size="custom" data-color="custom" data-icons-type="simple">
-			
-			
-							
-				<a href="https://www.facebook.com/aaflowersbyandra" target="_blank" rel="noopener noreferrer" data-network="facebook" aria-label="Facebook">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20">
-					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Facebook</span>
-				</a>
-							
-				<a href="https://www.instagram.com/aaflowersbyandra/" target="_blank" rel="noopener noreferrer" data-network="instagram" aria-label="Instagram">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20">
-					<circle cx="10" cy="10" r="3.3"/>
-					<path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Instagram</span>
-				</a>
-							
-				<a href="https://ro.pinterest.com/aaflowersbyandra" target="_blank" rel="noopener noreferrer" data-network="pinterest" aria-label="Pinterest">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20">
-					<path d="M10,0C4.5,0,0,4.5,0,10c0,4.1,2.5,7.6,6,9.2c0-0.7,0-1.5,0.2-2.3c0.2-0.8,1.3-5.4,1.3-5.4s-0.3-0.6-0.3-1.6c0-1.5,0.9-2.6,1.9-2.6c0.9,0,1.3,0.7,1.3,1.5c0,0.9-0.6,2.3-0.9,3.5c-0.3,1.1,0.5,1.9,1.6,1.9c1.9,0,3.2-2.4,3.2-5.3c0-2.2-1.5-3.8-4.2-3.8c-3,0-4.9,2.3-4.9,4.8c0,0.9,0.3,1.5,0.7,2C6,12,6.1,12.1,6,12.4c0,0.2-0.2,0.6-0.2,0.8c-0.1,0.3-0.3,0.3-0.5,0.3c-1.4-0.6-2-2.1-2-3.8c0-2.8,2.4-6.2,7.1-6.2c3.8,0,6.3,2.8,6.3,5.7c0,3.9-2.2,6.9-5.4,6.9c-1.1,0-2.1-0.6-2.4-1.2c0,0-0.6,2.3-0.7,2.7c-0.2,0.8-0.6,1.5-1,2.1C8.1,19.9,9,20,10,20c5.5,0,10-4.5,10-10C20,4.5,15.5,0,10,0z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Pinterest</span>
-				</a>
-			
-			
-					</div>
-
-	</div>
-
-</div><div data-column="menu">
-<nav id="footer-menu" class="footer-menu " data-id="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
-
-	<ul id="menu-footer-menu" class="menu"><li id="menu-item-1926" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1926"><a href="https://aaflowers.ro/categorie-produs/plante-si-aranjamente-cu-plante/">Plante</a></li>
-<li id="menu-item-1927" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1927"><a href="https://aaflowers.ro/categorie-produs/decoratiuni/">Decoratiuni</a></li>
-</ul></nav>
-</div></div></div><div data-row="middle"><div class="ct-container" data-stack="mobile"><div data-column="widget-area-4"><div class="ct-widget ct-contact-info-widget" id="blocksy_ct_contact_info-5"><h3 class="widget-title">A&amp;A Flowers</h3>
-
-	<ul data-icons-type="rounded:outline" data-icon-size="medium">
-					<li>
-				<span class="ct-icon-container">
-					<svg width="18" height="18" viewBox="0 0 20 20"><path d="M10,0C6.1,0,3,3.1,3,7c0,4.5,6,11.8,6.2,12.1L10,20l0.8-0.9C11,18.8,17,11.5,17,7C17,3.1,13.9,0,10,0z M10,2c2.8,0,5,2.2,5,5c0,2.7-3.1,7.4-5,9.8C8.1,14.4,5,9.7,5,7C5,4.2,7.2,2,10,2zM10,4.5C8.6,4.5,7.5,5.6,7.5,7S8.6,9.5,10,9.5s2.5-1.1,2.5-2.5S11.4,4.5,10,4.5z"/></svg>				</span>
-
-				<div class="contact-info">
-											<span class="contact-title">
-							Adresa						</span>
-					
-											<span class="contact-text">
-							
-							Strada Alexandru Vaida Voevod 59, Cluj-Napoca
-													</span>
-									</div>
-			</li>
-					<li>
-				<span class="ct-icon-container">
-					<svg width="18" height="18" viewBox="0 0 20 20"><path d="M4.4,0C4,0,3.6,0.2,3.2,0.4l0,0l0,0L0.8,2.9l0,0C0,3.6-0.2,4.7,0.1,5.6c0,0,0,0,0,0c0.7,1.9,2.3,5.5,5.6,8.7c3.3,3.3,6.9,4.9,8.7,5.6h0c0.9,0.3,1.9,0.1,2.7-0.5l2.4-2.4c0.6-0.6,0.6-1.7,0-2.4l-3.1-3.1l0,0c-0.6-0.6-1.8-0.6-2.4,0l-1.5,1.5c-0.6-0.3-1.9-1-3.1-2.2C8,9.5,7.4,8.2,7.2,7.6l1.5-1.5c0.6-0.6,0.7-1.7,0-2.4l0,0L8.6,3.6L5.6,0.5l0,0l0,0C5.2,0.2,4.8,0,4.4,0zM4.4,1.5c0.1,0,0.1,0,0.2,0.1l3.1,3.1l0.1,0.1c0,0,0,0.1,0,0.2L5.7,6.9L5.3,7.3l0.2,0.5c0,0,0.9,2.4,2.7,4.1L8.4,12c1.8,1.6,3.9,2.5,3.9,2.5l0.5,0.2l2.3-2.3c0.1-0.1,0.1-0.1,0.2,0l3.1,3.1c0.1,0.1,0.1,0.1,0,0.2l-2.4,2.4c-0.4,0.3-0.7,0.4-1.2,0.2c-1.7-0.7-5.1-2.2-8.1-5.2c-3-3-4.6-6.5-5.2-8.2c-0.1-0.3,0-0.8,0.2-1l0,0l2.3-2.4C4.2,1.6,4.3,1.5,4.4,1.5z"/></svg>				</span>
-
-				<div class="contact-info">
-											<span class="contact-title">
-							Telefon						</span>
-					
-											<span class="contact-text">
-															<a href="tel:0787 625 980">
-							
-							0787 625 980
-															</a>
-													</span>
-									</div>
-			</li>
-					<li>
-				<span class="ct-icon-container">
-					<svg width="18" height="18" viewBox="0 0 20 20"><path d="M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10h5v-2h-5c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8v1.5c0,0.8-0.7,1.5-1.5,1.5S15,12.3,15,11.5V10c0-2.7-2.3-5-5-5s-5,2.3-5,5s2.3,5,5,5c1.4,0,2.7-0.6,3.6-1.6c0.6,0.9,1.7,1.6,2.9,1.6c1.9,0,3.5-1.6,3.5-3.5V10C20,4.5,15.5,0,10,0zM10,7c1.7,0,3,1.3,3,3s-1.3,3-3,3s-3-1.3-3-3S8.3,7,10,7z"/></svg>				</span>
-
-				<div class="contact-info">
-											<span class="contact-title">
-							Email:						</span>
-					
-											<span class="contact-text">
-															<a href="mailto:contact@aaflowers.ro">
-							
-							contact@aaflowers.ro
-															</a>
-													</span>
-									</div>
-			</li>
-			</ul>
-
-	</div></div><div data-column="widget-area-1"><div class="ct-widget widget_nav_menu" id="nav_menu-10"><h3 class="widget-title">Magazin</h3><div class="menu-footer-1-container"><ul id="menu-footer-1" class="widget-menu"><li id="menu-item-1914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1914"><a href="https://aaflowers.ro/buchet-personalizat/">Buchet Personalizat</a></li>
-<li id="menu-item-1915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1915"><a href="https://aaflowers.ro/evenimente/">Evenimente Cluj Napoca &#038; Bistrița</a></li>
-<li id="menu-item-1919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1919"><a href="https://aaflowers.ro/magazin-online-buchete-aranjamente/">Magazin Online</a></li>
-<li id="menu-item-1920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1920"><a href="https://aaflowers.ro/portofoliu/">Portofoliu</a></li>
-</ul></div></div></div><div data-column="widget-area-3"><div class="ct-widget widget_nav_menu" id="nav_menu-9"><h3 class="widget-title">Utile</h3><div class="menu-footer-2-container"><ul id="menu-footer-2" class="widget-menu"><li id="menu-item-1922" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1922"><a href="https://aaflowers.ro/termeni-si-conditii/">Termeni si conditii</a></li>
-<li id="menu-item-1923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1923"><a href="https://aaflowers.ro/informatii-suplimentare-magazin-online/">Informatii</a></li>
-<li id="menu-item-1930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1930"><a href="https://aaflowers.ro/contul-meu/">Contul meu</a></li>
-<li id="menu-item-1931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1931"><a href="https://aaflowers.ro/contul-meu/comenzi/">Comenzile mele</a></li>
-</ul></div></div></div><div data-column="widget-area-2"><div class="ct-widget widget_media_image" id="media_image-5"><a href="https://www.mobilpay.ro/public/en/"><img width="300" height="53" src="images/netopia_banner_gradient-300x53.jpg" class="image wp-image-831  attachment-medium size-medium" alt loading="lazy" style="max-width: 100%; height: auto;" srcset="images/netopia_banner_gradient-300x53.jpg 300w, images/netopia_banner_gradient-530x94.jpg 530w, images/netopia_banner_gradient-64x11.jpg 64w, images/netopia_banner_gradient.jpg 571w" sizes="(max-width: 300px) 100vw, 300px"></a></div></div></div></div><div data-row="bottom"><div class="ct-container"><div data-column="copyright">
-<div class="ct-footer-copyright" data-id="copyright">
-
-	<p>Copyright © 2021 A&amp;A Flowers - Powered by <a href="https://balloonline.ro/" target="_blank" rel="noopener">Balloonline</a></p></div>
-</div></div></div></footer></div>
-
-		<script>
- document.addEventListener('DOMContentLoaded', function () {
-				if (!String.prototype.startsWith) {
-					String.prototype.startsWith = function (searchString, position) {
-						position = position || 0;
-						return this.substr(position, searchString.length) === searchString;
-					};
-				}
-				jQuery('.weglot-lang a').on('click', function (e) {
-					e.preventDefault();
-					var href = jQuery(this).attr('href');
-					Object.keys(window.sessionStorage).forEach(function (element) {
-						if (element.startsWith('wc_cart_hash_') || element.startsWith('wc_fragments_')) {
-							window.sessionStorage.removeItem(element);
-						}
-					});
-					window.location.replace(href);
-				})
-			})
- </script>
-		<div class="ct-drawer-canvas">
-	<a href="#" class="ct-back-to-top ct-hidden-sm" data-shape="square" data-alignment="right" title="Go to top" aria-label="Go to top">
-
-		<svg width="12" height="12" viewBox="0 0 20 20"><path d="M10,0L9.4,0.6L0.8,9.1l1.2,1.2l7.1-7.1V20h1.7V3.3l7.1,7.1l1.2-1.2l-8.5-8.5L10,0z"/></svg>
-		
-	</a>
-
-	
-		<div id="search-modal" class="ct-panel" data-behaviour="modal">
-			<div class="ct-panel-actions">
-				<div class="close-button">
-					<span class="ct-trigger closed">
-						<span></span>
-					</span>
-				</div>
-			</div>
-
-			<div class="ct-panel-content">
-				
-
-<form role="search" method="get" class="search-form" action="https://aaflowers.ro" data-live-results="thumbs">
-	<div class="ct-search-input">
-		<input type="search" class="modal-field" placeholder="Caută" value name="s" autocomplete="off" title="Search Input">
-
-		<button class="search-submit" aria-label="Search">
-			<span hidden>Search</span>
-			<svg class="ct-icon" width="12px" height="12px" viewBox="0 0 24 24">
-
-				<path d="M23.3,23.3c-0.9,0.9-2.3,0.9-3.2,0l-4-4c-1.6,1-3.6,1.7-5.7,1.7C4.7,21,0,16.3,0,10.5S4.7,0,10.5,0C16.3,0,21,4.7,21,10.5
-				c0,2.1-0.6,4-1.7,5.7l4,4C24.2,21,24.2,22.5,23.3,23.3z M10.5,3C6.4,3,3,6.4,3,10.5S6.4,18,10.5,18c4.1,0,7.5-3.4,7.5-7.5
-				C18,6.4,14.7,3,10.5,3z"/>
-			</svg>
-
-			<span data-loader="circles"><span></span><span></span><span></span></span>
-		</button>
-
-		
-					<input type="hidden" name="ct_post_type" value="product:nx_bar">
-			</div>
-</form>
-
-
-			</div>
-		</div>
-
-		<div id="offcanvas" class="ct-panel ct-header" data-behaviour="left-side" data-device="mobile"><section>
-		<div class="ct-panel-actions">
-			<div class="close-button">
-				<span class="ct-trigger closed">
-					<span></span>
-				</span>
-			</div>
-		</div>
-		<div class="ct-panel-content" data-device="desktop"></div><div class="ct-panel-content" data-device="mobile">
-<nav class="mobile-menu has-submenu" data-id="mobile-menu" data-type="type-2">
-	<ul id="menu-meniu-principal-1" class><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://aaflowers.ro/buchet-personalizat/">Buchet Personalizat</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1873"><a href="https://aaflowers.ro/magazin-online-buchete-aranjamente/">Magazin<span class="child-indicator"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
-<ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2095"><a href="https://aaflowers.ro/categorie-produs/primavara-flori-de-sezon-produse-in-romania/">Primavara &#8211; flori de sezon produse in Romania</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2191"><a href="https://aaflowers.ro/categorie-produs/felicitari-lumanari-produse-in-romania/">Felicitări și lumânări &#8211; produse în România</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2021"><a href="https://aaflowers.ro/categorie-produs/buchete/">Buchete</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2027"><a href="https://aaflowers.ro/categorie-produs/plante-si-aranjamente-cu-plante/">Plante</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2025"><a href="https://aaflowers.ro/categorie-produs/decoratiuni/">Decoratiuni</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1870"><a href="https://aaflowers.ro/evenimente/">Evenimente</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1871"><a href="https://aaflowers.ro/portofoliu/">Portofoliu</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1872"><a href="https://aaflowers.ro/contact/">Contact</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2137"><a href="https://aaflowers.ro/blog/">Blog</a></li>
-</ul></nav>
-
-<div class="ct-header-socials " data-id="socials">
-
-	
-		<div class="ct-social-box" data-icon-size="custom" data-color="custom" data-icons-type="simple">
-			
-			
-							
-				<a href="https://www.facebook.com/aaflowersbyandra" target="_blank" rel="noopener noreferrer" data-network="facebook" aria-label="Facebook">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20">
-					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Facebook</span>
-				</a>
-							
-				<a href="#" target="_blank" rel="noopener noreferrer" data-network="twitter" aria-label="Twitter">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20">
-					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Twitter</span>
-				</a>
-							
-				<a href="https://www.instagram.com/aaflowersbyandra/" target="_blank" rel="noopener noreferrer" data-network="instagram" aria-label="Instagram">
-
-					<span class="ct-icon-container">
-						
-				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20">
-					<circle cx="10" cy="10" r="3.3"/>
-					<path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"/>
-				</svg>
-								</span>
-
-					<span class="ct-label" hidden>Instagram</span>
-				</a>
-			
-			
-					</div>
-
-	
-</div>
-</div></section></div>
-
-	<div class="cookie-notification ct-fade-in-start" data-period="onemonth" data-type="type-1">
-
-		<div class="container">
-							<div class="ct-cookies-content"><p>Folosim cookie-uri pentru a-ți îmbunătăți experiența pe site-ul aaflowers. Mai multe detalii în pagina <a href="https://aaflowers.ro/mystaging01/termeni-si-conditii/" target="_blank" rel="noopener">Termeni și condiții</a>.</p></div>
-			
-			<button type="submit" class="ct-button ct-accept">Accept</button>
-
-							<button class="ct-close">×</button>
-			
-		</div>
-	</div>
-	
-<div id="account-modal" class="ct-panel" data-behaviour="modal">
-	<div class="ct-panel-actions">
-		<div class="close-button">
-			<span class="ct-trigger closed">
-				<span></span>
-			</span>
-		</div>
-	</div>
-
-	<div class="ct-panel-content">
-		<div class="ct-account-form">
-			
-			<section class="ct-login-form active">
-				
-				<form name="loginform" id="loginform" action="https://aaflowers.ro/wp-login.php" method="post">
-										
-					<p class="login-username">
-						<label for="user_login">Email Address</label>
-						<input type="text" name="log" id="user_login" class="input" value size="20">
-					</p>
-
-					<p class="login-password">
-						<label for="user_pass">Password</label>
-						<input type="password" name="pwd" id="user_pass" class="input" value size="20">
-					</p>
-
-					<p class="login-remember col-2">
-						<label>
-							<input name="rememberme" type="checkbox" id="rememberme" value="forever">
-							Remember Me						</label>
-
-						<a href="https://aaflowers.ro/wp-login.php?action=lostpassword" class="ct-forgot-password">
-							Forgot Password?						</a>
-					</p>
-
-					
-					<p class="login-submit">
-						<button name="wp-submit" class="ct-button">
-							Log In						</button>
-
-						<input type="hidden" name="redirect_to" value="https://aaflowers.ro/">
-					</p>
-
-														</form>
-			</section>
-
-			
-			<section class="ct-forgot-password-form">
-				<form name="lostpasswordform" id="lostpasswordform" action="https://aaflowers.ro/wp-login.php?action=lostpassword" method="post">
-					
-					<p>
-						<label for="user_login_forgot">Username or Email Address</label>
-						<input type="text" name="user_login" id="user_login_forgot" class="input" value size="20" autocapitalize="off" required>
-					</p>
-
-					<p>
-						<button name="wp-submit" class="ct-button">
-							Get New Password						</button>
-
-						<!-- <input type="hidden" name="redirect_to" value="https://aaflowers.ro/"> -->
-					</p>
-
-									</form>
-
-				<a href="https://aaflowers.ro/wp-login.php" class="ct-back-to-login ct-login">
-					← Back to login				</a>
-			</section>
-		</div>
-	</div>
-</div>
-
-</div>	<script type="text/javascript">
-		(function () {
-			var c = document.body.className;
-			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-			document.body.className = c;
-		})();
+        
+    </div><!-- end wrapper -->
+    
+
+<!--[if lt IE 9]>
+<script src="https://almajanflowers.ro/wp-content/themes/porto/js/html5shiv.min.js"></script>
+<script src="https://almajanflowers.ro/wp-content/themes/porto/js/respond.min.js"></script>
+<![endif]-->
+
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
 	</script>
-	<script type="text/javascript" src="js/events.js" id="ct-events-js"></script>
-<script type="text/javascript" id="ct-scripts-js-extra">
+				<script type="text/javascript">
+				function revslider_showDoubleJqueryError(sliderID) {
+					var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+					errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+					errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+					errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+					errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+						jQuery(sliderID).show().html(errorMessage);
+				}
+			</script>
+			<link rel="stylesheet" property="stylesheet" id="vc_google_fonts_abril_fatfaceregular-css" href="css/css_1.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery.selectBox.min.js"></script>
+<script type="text/javascript">
 /* <![CDATA[ */
-var ct_localizations = {"ajax_url":"https:\/\/aaflowers.ro\/wp-admin\/admin-ajax.php","nonce":"c1b35fed42","public_url":"https:\/\/aaflowers.ro\/wp-content\/themes\/blocksy\/static\/bundle\/","rest_url":"https:\/\/aaflowers.ro\/wp-json\/","search_url":"https:\/\/aaflowers.ro\/search\/QUERY_STRING\/","show_more_text":"Show more","more_text":"More","internet_explorer_template":"<div class=\"ct-unsuported-browser\">\n\t<svg width=\"120px\" height=\"120px\" viewBox=\"0 0 100 100\">\n\t\t<path d=\"M14.8,54.7c-1.3,0-2.3-1-2.3-2.3v-4.7c0-1.3,1-2.3,2.3-2.3s2.3,1,2.3,2.3v4.7C17.2,53.7,16.1,54.7,14.8,54.7zM35.6,79.6l-4.1-2.3c-1.1-0.6-2.6-0.2-3.2,0.9s-0.2,2.6,0.9,3.2l4.1,2.3c0.4,0.2,0.8,0.3,1.2,0.3c0.8,0,1.6-0.4,2-1.2C37.1,81.7,36.7,80.2,35.6,79.6z M68.4,77.3l-4.1,2.3c-1.1,0.6-1.5,2.1-0.9,3.2c0.5,0.8,1.2,1.2,2,1.2c0.4,0,0.8-0.1,1.2-0.3l4.1-2.3c1.1-0.6,1.5-2.1,0.9-3.2S69.5,76.6,68.4,77.3zM82.8,47.7v4.7c0,1.3,1,2.3,2.3,2.3s2.3-1,2.3-2.3v-4.7c0-1.3-1-2.3-2.3-2.3S82.8,46.3,82.8,47.7zM70.8,18.7l-4.1-2.3c-1.1-0.6-2.6-0.2-3.2,0.9s-0.2,2.6,0.9,3.2l4.1,2.3c0.4,0.2,0.8,0.3,1.2,0.3c0.8,0,1.6-0.4,2-1.2C72.3,20.8,71.9,19.3,70.8,18.7zM33.3,16.3l-4.1,2.3c-1.1,0.6-1.5,2.1-0.9,3.2c0.5,0.8,1.2,1.2,2,1.2c0.4,0,0.8-0.1,1.2-0.3l4.1-2.3c1.1-0.6,1.5-2.1,0.9-3.2S34.4,15.7,33.3,16.3z M60.2,10.2c0,5.6-4.5,10.2-10.2,10.2s-10.2-4.5-10.2-10.2S44.4,0,50,0S60.2,4.5,60.2,10.2zM55.5,10.2c0-3-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5s2.4,5.5,5.5,5.5S55.5,13.2,55.5,10.2z M60.2,89.8c0,5.6-4.5,10.2-10.2,10.2s-10.2-4.5-10.2-10.2S44.4,79.7,50,79.7S60.2,84.2,60.2,89.8zM55.5,89.8c0-3-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5s2.4,5.5,5.5,5.5S55.5,92.9,55.5,89.8zM95.3,70.3c0,5.6-4.5,10.2-10.2,10.2S75,75.9,75,70.3s4.5-10.2,10.2-10.2S95.3,64.7,95.3,70.3zM90.6,70.3c0-3-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5s2.4,5.5,5.5,5.5S90.6,73.4,90.6,70.3zM75,29.7c0-5.6,4.5-10.2,10.2-10.2s10.2,4.5,10.2,10.2s-4.5,10.2-10.2,10.2S75,35.3,75,29.7zM79.7,29.7c0,3,2.4,5.5,5.5,5.5s5.5-2.4,5.5-5.5s-2.4-5.5-5.5-5.5S79.7,26.6,79.7,29.7z M25,29.7c0,5.6-4.5,10.2-10.2,10.2S4.7,35.3,4.7,29.7s4.5-10.2,10.2-10.2S25,24.1,25,29.7zM20.3,29.7c0-3-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5s2.4,5.5,5.5,5.5S20.3,32.7,20.3,29.7zM25,70.3c0,5.6-4.5,10.2-10.2,10.2S4.7,75.9,4.7,70.3s4.5-10.2,10.2-10.2S25,64.7,25,70.3z M20.3,70.3c0-3-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5s2.4,5.5,5.5,5.5S20.3,73.4,20.3,70.3z\"\/>\n\t\t<path d=\"M64.6,52.7c0,1-1.9,3.9-4.8,5.3c-1.7,0.9-7-3.4-5.9-4.8s3.4,0.5,4.7-0.5C63.2,49.5,64.6,51.6,64.6,52.7zM71.9,50c0,12-9.8,21.9-21.9,21.9S28.1,62,28.1,50S38,28.1,50,28.1S71.9,38,71.9,50z M67.2,50c0-1.6-0.2-3.1-0.8-4.5l-1.2-0.3h-1.8c-1.1,0-2.1-0.5-2.7-1.3C59.8,42.7,59,41,58.4,41c-0.8,0-2.1,5.5-4.8,5.5c-2.1,0-3.9-4.6-3.3-6.2c0.9-2.3,2.8-1.8,4.8-2.7c0.9-0.4,1.5-1.3,1.5-2.3v-1.2c-2-0.9-4.2-1.3-6.6-1.3c-8.6,0-15.7,6.3-17.1,14.6l1.2-0.1c0.7,0.1,1.3,0.4,1.4,0.9c0.3,2-1.8,2.7-1.2,4.3c0.5,1.5,2.5,2,3.5,1c1-0.9,2.2-3,2.4-4.9c0.3-3.3,4.4-4.8,6.1-1.8c0.5,0.9,0.2,2.5-0.8,3.6s-2.7,2-2.6,3.4c0.2,1.2,4.8,1.4,3.4,6.7c-0.2,0.8-0.6,1.5-1,2.1c-0.3,0.5-0.7,0.9-1.2,1.3c-0.7,0.5-1.4,0.9-2,1.2H42c2.4,1.2,5.2,2,8,2C59.5,67.2,67.2,59.5,67.2,50z\"\/>\n\t<\/svg>\n\n\n\t<h2>\n\t\tYou are using an old or unsupported browser\t<\/h2>\n\n\t<p>\n\t\tFor <b><a href=\"https:\/\/mashable.com\/article\/internet-explorer-vulnerability-just-stop-using-it\/\" target=\"_blank\">security reasons<\/a><\/b> and to get the most out of your theme please upgrade to the latest version of <a href=\"https:\/\/www.microsoft.com\/en-us\/windows\/microsoft-edge\" target=\"_blank\">your browser<\/a> or use one of these browsers instead <a href=\"https:\/\/www.google.com\/chrome\/\" target=\"_blank\">Chrome<\/a>, <a href=\"https:\/\/support.apple.com\/downloads\/safari\" target=\"_blank\">Safari<\/a> or <a href=\"https:\/\/www.mozilla.org\/en-US\/firefox\/new\/\" target=\"_blank\">Firefox <\/a>.\t<\/p>\n<\/div>\n\n","wc_empty_price":"<span class=\"woocommerce-Price-amount amount\"><bdi>0,00\u00a0<span class=\"woocommerce-Price-currencySymbol\">lei<\/span><\/bdi><\/span>"};
+var yith_wcwl_l10n = {"ajax_url":"\/wp-admin\/admin-ajax.php","redirect_to_cart":"no","multi_wishlist":"","hide_add_button":"1","is_user_logged_in":"","ajax_loader_url":"https:\/\/almajanflowers.ro\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader.gif","remove_from_wishlist_after_add_to_cart":"yes","labels":{"cookie_disabled":"We are sorry, but this feature is available only if cookies are enabled on your browser.","added_to_cart_message":"<div class=\"woocommerce-message\">Product correctly added to cart<\/div>"},"actions":{"add_to_wishlist_action":"add_to_wishlist","remove_from_wishlist_action":"remove_from_wishlist","move_to_another_wishlist_action":"move_to_another_wishlsit","reload_wishlist_and_adding_elem_action":"reload_wishlist_and_adding_elem"}};
 /* ]]> */
 </script>
-<script type="text/javascript" src="js/main.js" id="ct-scripts-js"></script>
-<script async type="text/javascript" src="js/main_3.js" id="blocksy-ext-cookies-consent-scripts-js"></script>
-<script type="text/javascript" src="js/main_2.js" id="blocksy-ext-trending-scripts-js"></script>
-<script type="text/javascript" src="js/jquery.blockUI.min.js" id="jquery-blockui-js"></script>
-<script type="text/javascript" id="wc-add-to-cart-js-extra">
+<script type="text/javascript" src="js/jquery.yith-wcwl.js"></script>
+<script type="text/javascript">
 /* <![CDATA[ */
-var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Vezi co\u0219ul","cart_url":"https:\/\/aaflowers.ro\/cos\/","is_cart":"","cart_redirect_after_add":"no"};
+var wpcf7 = {"apiSettings":{"root":"https:\/\/almajanflowers.ro\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
 /* ]]> */
 </script>
-<script type="text/javascript" src="js/add-to-cart.min.js" id="wc-add-to-cart-js"></script>
-<script type="text/javascript" src="js/js.cookie.min.js" id="js-cookie-js"></script>
-<script type="text/javascript" id="woocommerce-js-extra">
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/js.cookie.min.js"></script>
+<script type="text/javascript">
 /* <![CDATA[ */
 var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="js/woocommerce.min.js" id="woocommerce-js"></script>
-<script type="text/javascript" id="wc-cart-fragments-js-extra">
+<script type="text/javascript" src="js/woocommerce.min.js"></script>
+<script type="text/javascript">
 /* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_2b4a58fd00dfa03037667bfa98513290","fragment_name":"wc_fragments_2b4a58fd00dfa03037667bfa98513290","request_timeout":"5000"};
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_8d4114b104fd96dbbe0e788e4f80f77d","fragment_name":"wc_fragments_8d4114b104fd96dbbe0e788e4f80f77d","request_timeout":"5000"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="js/cart-fragments.min.js" id="wc-cart-fragments-js"></script>
-<script type="text/javascript" id="wc-cart-fragments-js-after">
-		jQuery( 'body' ).bind( 'wc_fragments_refreshed', function() {
-			var jetpackLazyImagesLoadEvent;
-			try {
-				jetpackLazyImagesLoadEvent = new Event( 'jetpack-lazy-images-load', {
-					bubbles: true,
-					cancelable: true
-				} );
-			} catch ( e ) {
-				jetpackLazyImagesLoadEvent = document.createEvent( 'Event' )
-				jetpackLazyImagesLoadEvent.initEvent( 'jetpack-lazy-images-load', true, true );
-			}
-			jQuery( 'body' ).get( 0 ).dispatchEvent( jetpackLazyImagesLoadEvent );
-		} );
-		
-</script>
-<script type="text/javascript" src="js/main_1.js" id="blocksy-companion-scripts-js"></script>
-<script type="text/javascript" src="js/Cookies.js" id="notificationx-cookie-js"></script>
-<script type="text/javascript" id="notificationx-js-extra">
+<script type="text/javascript" src="js/cart-fragments.min.js"></script>
+<script type="text/javascript" src="js/yith-autocomplete.min.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.min.js"></script>
+<script type="text/javascript" src="js/comment-reply.min.js"></script>
+<script type="text/javascript" src="js/underscore.min.js"></script>
+<script type="text/javascript">
 /* <![CDATA[ */
-var NotificationX = {"ajaxurl":"https:\/\/aaflowers.ro\/wp-admin\/admin-ajax.php"};
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 /* ]]> */
 </script>
-<script type="text/javascript" src="js/notificationx-public.min.js" id="notificationx-js"></script>
-<script type="text/javascript" src="js/frontend-script.min.js" id="vi-wpvs-frontend-script-js"></script>
-<script type="text/javascript" src="js/wp-embed.min.js" id="wp-embed-js"></script>
-<script type="text/javascript" src="js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
-<script type="text/javascript" src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
-<script type="text/javascript" src="js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
-<script type="text/javascript" src="js/jquery.sticky.min.js" id="elementor-sticky-js"></script>
-<script type="text/javascript" id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/aaflowers.ro\/wp-admin\/admin-ajax.php","nonce":"e010266504","urls":{"assets":"https:\/\/aaflowers.ro\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"menu_cart":{"cart_page_url":"https:\/\/aaflowers.ro\/cos\/","checkout_page_url":"https:\/\/aaflowers.ro\/finalizare\/"},"facebook_sdk":{"lang":"ro_RO","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/aaflowers.ro\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+<script type="text/javascript" src="js/wp-util.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
 </script>
-<script type="text/javascript" src="js/frontend.min.js" id="elementor-pro-frontend-js"></script>
-<script type="text/javascript" src="js/core.min.js" id="jquery-ui-core-js"></script>
-<script type="text/javascript" src="js/dialog.min.js" id="elementor-dialog-js"></script>
-<script type="text/javascript" src="js/waypoints.min.js" id="elementor-waypoints-js"></script>
-<script type="text/javascript" src="js/share-link.min.js" id="share-link-js"></script>
-<script type="text/javascript" src="js/swiper.min.js" id="swiper-js"></script>
-<script type="text/javascript" id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false,"isImprovedAssetsLoading":false},"i18n":{"shareOnFacebook":"Partajeaz\u0103 pe Facebook","shareOnTwitter":"Partajeaz\u0103 pe Twitter","pinIt":"Partajeaz\u0103 pe Pinterest","download":"Descarc\u0103","downloadImage":"Descarc\u0103 imaginea","fullscreen":"Ecran complet","zoom":"M\u0103re\u0219te","share":"Partajeaz\u0103","playVideo":"Ruleaz\u0103 videoul","previous":"Anterioar\u0103","next":"Urm\u0103toare","close":"\u00cenchide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.1.4","is_static":false,"experimentalFeatures":{"form-submissions":true},"urls":{"assets":"https:\/\/aaflowers.ro\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1768,"title":"Atelier%20De%20Crea%C8%9Bie%20%C8%99i%20Design%20Floral%20Cluj%20%7C%20A%26A%20Flowers","excerpt":"","featuredImage":false}};
+<script type="text/javascript" src="js/add-to-cart-variation.min.js"></script>
+<script type="text/javascript" src="js/js_composer_front.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var js_porto_vars = {"rtl":"","ajax_url":"https:\/\/almajanflowers.ro\/wp-admin\/admin-ajax.php","change_logo":"0","container_width":"1170","grid_gutter_width":"30","show_sticky_header":"","show_sticky_header_tablet":"0","show_sticky_header_mobile":"1","ajax_loader_url":":\/\/almajanflowers.ro\/wp-content\/themes\/porto\/images\/ajax-loader@2x.gif","category_ajax":"1","prdctfltr_ajax":"","show_minicart":"0","slider_loop":"0","slider_autoplay":"0","slider_autoheight":"1","slider_speed":"5000","slider_nav":"1","slider_nav_hover":"1","slider_margin":"","slider_dots":"1","slider_animatein":"","slider_animateout":"","product_thumbs_count":"4","product_zoom":"1","product_zoom_mobile":"1","product_image_popup":"1","zoom_type":"inner","zoom_scroll":"1","zoom_lens_size":"200","zoom_lens_shape":"square","zoom_contain_lens":"1","zoom_lens_border":"1","zoom_border_color":"#888888","zoom_border":"0","screen_lg":"1200","mfp_counter":"%curr% of %total%","mfp_img_error":"<a href=\"%url%\">The image<\/a> could not be loaded.","mfp_ajax_error":"<a href=\"%url%\">The content<\/a> could not be loaded.","popup_close":"Close","popup_prev":"Previous","popup_next":"Next","request_error":"The requested content cannot be loaded.<br\/>Please try again later."};
+/* ]]> */
 </script>
-<script type="text/javascript" src="js/frontend.min_1.js" id="elementor-frontend-js"></script>
-<script type="text/javascript" src="js/preloaded-elements-handlers.min_1.js" id="pro-preloaded-elements-handlers-js"></script>
-<script type="text/javascript" src="js/preloaded-elements-handlers.min.js" id="preloaded-elements-handlers-js"></script>
+<script type="text/javascript" src="js/theme.min.js"></script>
+<script type="text/javascript" src="js/wp-embed.min.js"></script>
 
-<!--Weglot 3.3.4--><aside data-wg-notranslate class="country-selector weglot-dropdown weglot-default"><input id="wg16204866856096aa1d9ef13335" class="weglot_choice" type="checkbox" name="menu"><label for="wg16204866856096aa1d9ef13335" class="wgcurrent wg-li weglot-lang weglot-language weglot-flags flag-3 ro" data-code-language="ro" data-name-language="Română"><span class="wglanguage-name">Română</span></label><ul><li class="wg-li weglot-lang weglot-language weglot-flags flag-3 en" data-code-language="en"><a data-wg-notranslate href="https://aaflowers.ro/en/">English</a></li></ul></aside> </body>
+    <script type="text/javascript">
+        
+                    jQuery(document).ready(function(){});
+                    </script>
+</body>
 </html>
